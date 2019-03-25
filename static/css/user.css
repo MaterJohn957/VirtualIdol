@@ -1,0 +1,52 @@
+
+
+/*************分割线***********/
+.divided-line{
+    width:100%;
+    height:1px;
+    border-bottom:solid 1px #ccc;
+    margin:10px 0 5px 0;
+}
+
+/******************************分类导航*******************************/
+#my-sorts{
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left:15px;
+    padding-right:15px;
+    border:solid 1px rgba(0, 0, 0, 0.125);
+}
+#my-sorts .nav-link{
+    font-size: 16px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+#my-sorts .nav-link .badge{
+    font-size: 8px;
+}
+.active-custom{
+    border-radius: 0px !important;
+    border-bottom: solid 2px rgb(91,158,235);
+    color:#666;
+    font-weight: 600;
+}
+
+
+/******************************关注样式*****************************/
+#focus-on-column{
+    margin-top: 20px;
+}
+#focus-on-column .card-columns .card .card-body .card-title a{
+    font-size: 25px;
+}
+.fa-venus{
+    font-size: 15px;
+    color:rgb(243, 112, 79);
+    font-weight: 600;
+}
+
+/******************************栏目样式*****************************/
+.column-hiden{
+    display: none;
+}
+

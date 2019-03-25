@@ -1,0 +1,186 @@
+body{
+    background-color: #eee;
+}
+a{
+    color:#999;
+    font-size:15px;
+}
+a:hover{
+    color:#666;
+}
+li{
+    list-style-type:none;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+}
+
+
+input::-webkit-input-placeholder {
+    font-size: 14px;
+ }
+
+.container{
+    min-width: 1140px;
+}
+
+/*偶像信息*/
+#idolInfo{
+    padding: 20px 30px 20px 30px;
+    margin-top: 30px;
+}
+
+#idolInfo h4{
+    opacity: 0.7;
+}
+
+.font-opacity{
+    opacity: 0.8;
+}
+
+.img-box{
+    background-color: rgba(222,226,231,0.2);
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    border: solid 1px #E0E0E0;
+    overflow: hidden;
+}
+
+.img-wrap{
+    position: relative;
+    cursor: pointer;
+}
+
+.img-style{
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.img-delete{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    display: none;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+#upload-img p{
+    font-size: 12px;
+    color: rgba(110, 110, 110, 0.8);
+    margin-left: 9px;
+    margin-top: 4px;
+}
+
+.upload-btn{
+    border: 1px dashed #c8cbd2;
+    width: 104px;
+    height: 104px;
+    border-radius: 8px;
+    margin: 148px auto;
+    position: relative;
+}
+
+.upload{
+    opacity: 0;
+    width: 104px;
+    height: 104px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.upload-btn .add{
+    position: absolute;
+    top: 36px;
+    left: 40px;
+    opacity: 0.2;
+}
+
+#info{
+    padding-left: 50px;
+}
+
+/*取消输入框或按钮选中时边缘变蓝*/
+.noBlue:focus{
+    box-shadow: none;
+    outline: none;
+    border-color: rgba(240, 98, 146, 0.5);
+}
+
+.form-group{
+    position: relative;
+}
+
+.little-close{
+    position: absolute;
+    right: 20px;
+    top: 44px;
+    opacity: 0.4;
+    cursor: pointer;
+    display: none;
+}
+
+.form-group textarea{
+    border-radius: 5px;
+    min-height: 200px;
+    border-color: rgba(0, 0, 0,0.18);
+    /* caret-color: #fb7299; */
+    overflow: auto;
+    resize: none;
+}
+
+.word-num{
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    bottom: -20px;
+    right: 8px;
+}
+
+.button-group{
+    text-align: center;
+}
+
+.card form .button-group .btn-primary{
+    background-color: #F06292;
+    border: none;
+    outline: none;
+    width: 240px;
+    height: 50px;
+    padding-left: 80px;
+    margin: 20px auto 40px auto;
+}
+
+.button-aligin{
+    display:inline-flex;
+    margin-left:20px !important;
+    margin-right:20px !important;
+}
+
+.card form .btn-primary:hover{
+    background:#E91E63
+}
+
+.card form .btn-primary:active {
+    background:#E91E63 !important;
+    box-shadow: none !important;
+}
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>D20的个人空间</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap-4.1.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/style.css"/>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="component/navbar/navbar.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="component/user-card/user-card.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="component/content/content.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/user.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <!-- 引用的Vue组件 -->
+        <navbar-component></navbar-component>
+    </div>
+    
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+
+                    <div id="user-card">
+                        <!-- 引用的Vue组件 -->
+                        <user-card-component></user-card-component>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div>
+                        <nav id="my-sorts" class="nav">
+                            <a data-target="focus-on" class="nav-item nav-link active-custom" href="#">我的关注 </a>
+                            <a data-target="3d" class="nav-item nav-link" href="#">3D动画 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="video" class="nav-item nav-link" href="#">视频 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="picture" class="nav-item nav-link" href="#">图片 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="caricature" class="nav-item nav-link" href="#">漫画 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="music" class="nav-item nav-link" href="#">音乐 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                            <a data-target="fiction" class="nav-item nav-link" href="#">轻小说 <span class="badge badge-info" style="background-color:rgb(91, 158,  235)"></span></a>
+                        </nav>
+                        
+                        <!-- 我的关注 -->
+                        <div id="focus-on-column" class="my-column">
+                            <div class="card-columns">
+                                <div id="subscription">
+                                    <div v-for="att in attends">
+                                        <subscription-component></subscription-component>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 3D动画 -->
+                        <div id="3d-column" class="my-column column-hiden">
+                            
+                            <div id="cartoon">
+                                <div v-for="cart in cartoons">
+                                    <cartoon></cartoon>
+                                </div>  
+                            </div>
+
+                        </div>
+    
+                        <!-- 视频 -->
+                        <div id="video-column" class="my-column column-hiden">
+                            <div id="subscripted-video">
+                                <div v-for="vdo in allVideos">
+                                    <subscripted-video-component></subscripted-video-component>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        <!-- 图片 -->
+                        <div id="picture-column" class="my-column column-hiden">
+                            <div id="cartoon">
+                                <div v-for="cart in cartoons">
+                                    <cartoon></cartoon>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        <!-- 漫画 -->
+                        <div id="caricature-column" class="my-column column-hiden">
+                            <div id="cartoon">
+                                <div v-for="cart in cartoons">
+                                    <cartoon></cartoon>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        <!-- 音乐 -->
+                        <div id="music-column" class="my-column column-hiden">
+                            <div id="cartoon">
+                                <div v-for="cart in cartoons">
+                                    <cartoon></cartoon>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        <!-- 轻小说 -->
+                        <div id="fiction-column" class="my-column column-hiden">
+                            <div id="cartoon">
+                                <div v-for="cart in cartoons">
+                                    <cartoon></cartoon>
+                                </div>  
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="page-footer">
+        <p>© 2018 VirtualIdol, Com.</p>
+    </div>
+</body>
+<!-- 库文件 -->
+<script src="lib/vue.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap-4.1.3-dist/js/bootstrap.bundle.js"></script>
+<script src="lib/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/popper.js"></script>
+
+<!-- 自定义组件 -->
+<script src="component/navbar/navbar.js"></script>
+<script src="component/content/content.js"></script>
+<script src="component/user-card/user-card.js"></script>
+
+<!-- 页面控制脚本 -->
+<script src="js/user.js"></script>
+
+</html>

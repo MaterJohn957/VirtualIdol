@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="static/css/register.css" />
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="static/css/register.css"></script>
+</head>
+<body background="static/img/bg-register.jpg" style="background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+    <a class="index-btn" href="index.html">
+        <p>回主页</p>
+    </a>
+    <div class="div_container_main">
+        <div class="div_container_main_center">
+            <a href="index.html"><img class="div_logo" src="static/img/logo.png"></a>
+            <div class="div_word">
+                <p>立即注册</p>
+            </div>
+            <div class="form-field">
+                <div id="usename" class="input-field input-up">
+                    <input name="username"  type="text" placeholder="创建您的用户名">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div id="userpwd" class="input-field input-down">
+                    <input name="password"  type="password" placeholder="创建您的密码">
+                    <i class="fa fa-eye"></i>
+                </div>
+                <div class="other-links">
+                    <div class="register-link">
+                        <a>已有账号？</a>
+                    </div>
+                    <div class="forget-password-link">
+                        <a href="login.html">登 录</a>
+                    </div>
+                </div>
+                <div class="submit-btn" style="margin-top:20px;"><p onclick="register()">注册</p></div>
+                <div class="other-login-field">
+                    <p>用其他方式开始</p>
+                    <div class="other-login-icon">
+                        <div class="qq">
+                            <i class="fa fa-qq"></i>
+                        </div>
+                        <div class="weixin">
+                            <i class="fa fa-weixin"></i>
+                        </div>
+                        <div class="weibo">
+                            <i class="fa fa-weibo"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+<script>
+    function register(){
+        window.location.href="login.html";
+    }
+</script>
+</html>

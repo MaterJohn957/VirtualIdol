@@ -1,0 +1,70 @@
+.right-bar{
+    height: 95vh;
+    padding-right: 32px;
+    padding-top: 20px;
+    overflow-y:auto;
+}
+
+.card{
+    box-shadow: 0 2px 2px rgba(55, 71, 79, 0.3);
+    margin: 5px 0 10px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.title{
+    padding: 5px 0 5px 20px;
+}
+
+.user-name{
+    color: rgba(55, 71, 79, 0.8);
+    font-weight: bold;
+}
+
+.timestamp{
+    color: #999;
+    line-height: 22px;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.little-close{
+    position: absolute;
+    color: #5b9eeb;
+    right: 10px;
+    top: 10px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.content{
+    padding: 5px 0 5px 20px;
+}
+
+.message{
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+#private-message .card{
+    transition: all 500ms;
+}
+
+#private-message .card:hover{
+    border:solid 1px #5b9eeb;
+}
+
+#subscription-message .card .content a span{
+    color: #455A64;
+    font-weight: bold;
+}
+
+.title-name{
+    color: #455A64;
+    font-weight: bold;
+}
