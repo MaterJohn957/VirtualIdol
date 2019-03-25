@@ -1,0 +1,39 @@
+body {
+    font-family: Monospace;
+    color: #000;
+    margin: 0px;
+    background-color: #000;
+    overflow: hidden;
+}
+.play{
+    width:1100px;
+    height:650px;
+    margin:0px auto;
+}
+.play-pannel{
+    position: relative;
+    height:100%;
+    width:100%;
+}
+#play-window{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.play-pannel .controllers {
+    color:#ddd;
+    cursor: pointer;
+    position:absolute;
+}
+.play-btn{
+    bottom:30px;
+    left:30px;
+}
+.camera-control-btn{
+    bottom:30px;
+    right:60px;
+}
+.full-screen-btn{
+    bottom:30px;
+    right:30px;
+}
