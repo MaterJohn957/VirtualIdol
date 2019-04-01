@@ -21,3 +21,10 @@ new Vue(
     }
 )
 
+
+/**
+ * 自动轮播时间设为2秒
+ */
+$('.carousel').carousel({
+    interval: 2000
+})

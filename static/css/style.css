@@ -27,7 +27,8 @@ ul{
 }
 
 .container{
-    min-width: 1140px;
+    width: 1140px !important;
+    margin: 0 auto !important;
 }
 
 .page-footer{
