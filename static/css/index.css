@@ -89,12 +89,22 @@
   letter-spacing: 3px;
 }
 
+/**************************** 广告 ****************************/
+.advertisement{
+  background-color: #fff; 
+  margin-top:60px;
+  margin-bottom: 60px;
+  padding:10px;
+  height:100px;
+  border-radius: 3px;
+}
+
 /**************************** 推广 ****************************/
 .broadcast-panel{
   background-color: #fff; 
   margin-top:20px;
   padding:10px;
-  height:900px;
+  /* height:900px; */
   border-radius: 3px;
 }
 
@@ -114,7 +124,7 @@
   border-bottom: solid 2px #666;
 }
 
-/* 轮播图图片 */
+/************************ 轮播图图片 ************************/
 .content-img {
   display: block;
   height: 500px;
@@ -123,4 +133,93 @@
   background-size: cover;
 }
 
+/************************ 推广 共用样式 ************************/
+.popularize-idol-body {
+  margin: 20px 0 15px 0;
+}
+.popularize-idol-body a{
+  display: block;
+  width: 60px;
+  height:60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+.popularize-idol-body h5 {
+  float: left;
+  margin-left: 10px;
+}
+.popularize-idol-body p {
+  float: left;
+  margin-left: 10px;
+}
+.popularize-idol-body-card {
+  margin-bottom: 15px;
+  display: table;
+}
 
+/************************ 推广 偶像视频 ************************/
+.popularize-idol-video-head {
+  margin: 15px 0 15px 0;
+}
+.popularize-idol-video-head a{
+  display: block;
+  height:150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/************************ 推广 作品 ************************/
+.popularize-idol-production-head {
+  margin-top: 15px;
+}
+.popularize-idol-production-head a{
+  display: block;
+  height:150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.broadcast-header-left {
+  float: left;
+  width: 50%;
+}
+.broadcast-header-right {
+  float: right;
+  width: 50%;
+}
+
+/************************ 推广 音乐 ************************/
+.popularize-idol-music-head {
+  margin-top: 15px;
+}
+.popularize-idol-music-head a{
+  display: block;
+  height:130px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.music-head {
+  margin: 10px 10px 10px 10px !important;
+  width: 92%
+}
+
+
+
+
+/****************************** 视频 ******************************/
+.idol-video-head {
+  margin: 15px 15px 15px 15px;
+}
+.idol-video-head a{
+  display: block;
+  width: 248px;
+  height:150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

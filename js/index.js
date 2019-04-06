@@ -28,3 +28,9 @@ new Vue(
 $('.carousel').carousel({
     interval: 2000
 })
+
+
+
+/**
+ * 视频部分轮播效果
+ */
