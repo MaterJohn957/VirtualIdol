@@ -94,6 +94,15 @@
   color: #72b5c5;
 }
 
+/************************ 轮播图图片 ************************/
+.content-img {
+  display: block;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /**************************** 广告 ****************************/
 .advertisement{
   background-color: #fff; 
@@ -103,8 +112,13 @@
   height:100px;
   border-radius: 3px;
 }
+.advertisement-img {
+  display: block;
+  height: 80px;
+  margin: 0 auto;
+}
 
-/**************************** 推广 ****************************/
+/**************************** 推广 顶部标题 ****************************/
 .broadcast-panel{
   background-color: #fff; 
   margin-top:20px;
@@ -129,14 +143,7 @@
   border-bottom: solid 2px #666;
 }
 
-/************************ 轮播图图片 ************************/
-.content-img {
-  display: block;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 /************************ 推广 共用样式 ************************/
 .popularize-idol-body {
@@ -169,10 +176,15 @@
   top: -2px;
   left: -2px;
 }
+.popularize-idol-body-card:hover .card-img {
+  box-shadow: 5px 5px 5px #888888;
+}
 
 /************************ 推广 偶像视频 ************************/
 .popularize-idol-video-head {
   margin: 15px 0 15px 0;
+  background-color: #111111;
+  border: none;
 }
 .popularize-idol-video-head a{
   display: block;
@@ -181,13 +193,36 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.popularize-idol-video-head:hover {
-  box-shadow: 0px 0px 20px #888888;
+.popularize-idol-video-head:hover a {
+  box-shadow: 5px 5px 20px #888888;
+  opacity: 0.2;
 }
+.popularize-idol-video-head-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  display: none;
+}
+.popularize-idol-video-head-text p {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  color: #888888;
+  font-size: 15px;
+}
+.popularize-idol-video-head:hover .popularize-idol-video-head-text {
+  display: block;
+  opacity: 1;
+}
+
 
 /************************ 推广 作品 ************************/
 .popularize-idol-production-head {
-  margin-top: 15px;
+  margin: 15px 0 0 0;
+  background-color: #111111;
+  border: none;
 }
 .popularize-idol-production-head a{
   display: block;
@@ -196,9 +231,27 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.popularize-idol-production-head:hover {
-  box-shadow: 0px 0px 20px #888888;
+.popularize-idol-production-head:hover a{
+  box-shadow: 5px 5px 20px #888888;
+  opacity: 0.2;
 }
+.popularize-idol-production-head-text {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  display: none;
+}
+.popularize-idol-production-head-text p {
+  position: absolute;
+  top: 35px;
+  left: 10px;
+  color: #888888;
+  font-size: 15px;
+}
+
+
 .broadcast-header-left {
   float: left;
   width: 50%;
@@ -207,10 +260,15 @@
   float: right;
   width: 50%;
 }
+.popularize-idol-production-head:hover .popularize-idol-production-head-text {
+  display: block;
+  opacity: 1;
+}
 
 /************************ 推广 音乐 ************************/
 .popularize-idol-music-head {
   margin-top: 15px;
+  background-color: white;
 }
 .popularize-idol-music-head a{
   display: block;
@@ -219,8 +277,28 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.popularize-idol-music-head a:hover {
-  box-shadow: 0px 0px 20px #888888;
+.popularize-idol-music-head:hover a{
+  box-shadow: 5px 5px 20px #888888;
+  opacity: 0.2;
+}
+.popularize-idol-music-head-text {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 20px;
+  color: black;
+  display: none;
+}
+.popularize-idol-music-head-text p {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  color: #666;
+  font-size: 15px;
+}
+.popularize-idol-music-head:hover .popularize-idol-music-head-text {
+  display: block;
+  opacity: 1;
 }
 .music-head {
   margin: 10px 10px 10px 10px !important;
@@ -244,7 +322,7 @@
   left: 6px;
   top: 0px;
 }
-.popularize-music-ahref a:hover{
+.popularize-music-ahref:hover a{
   text-decoration: none;
   color: #72b5c5 !important;
 }
@@ -253,6 +331,9 @@
   background: #ccc;
   padding: 2px 14px 2px 12px;
   border-radius: 10%;
+}
+.popularize-music-ahref:hover .music-shadow {
+  box-shadow: 2px 2px 5px #000;
 }
 
 
@@ -274,16 +355,39 @@
 .idol-video-head:hover {
   box-shadow: 5px 5px 20px #888888;
   transform: scale(1.05);
-  opacity: 0.2;
 }
-/* .video-card-title {
-  font-size: 50px;
-  position: fixed;
-  bottom:10px;
-  right:10px;
-  color: #72b5c5;
+.idol-video-head:hover .video-card-title {
+  display: block;
+  opacity: 1 !important;
+}
+.idol-video-head:hover a {
+  opacity: 0.6;
+}
+.video-card-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 5px;
+  overflow: hidden;
+  background: #000;
+  background: linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9));
+  border-radius: 3px;
   display: none;
 }
-.video-card-title:hover {
-  display: inline;
-} */
+
+
+.video-card-title .title {
+  color: #fff;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  font-size: 15px;
+  padding-left: 10px;
+}
