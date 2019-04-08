@@ -88,6 +88,11 @@
   font-size: 23px;
   letter-spacing: 3px;
 }
+.header-nav-item a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+  color: #72b5c5;
+}
 
 /**************************** 广告 ****************************/
 .advertisement{
@@ -158,6 +163,12 @@
   margin-bottom: 15px;
   display: table;
 }
+.popularize-idol-body-card:hover {
+  opacity: 0.8;
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
 
 /************************ 推广 偶像视频 ************************/
 .popularize-idol-video-head {
@@ -170,7 +181,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.popularize-idol-video-head:hover {
+  box-shadow: 0px 0px 20px #888888;
+}
 
 /************************ 推广 作品 ************************/
 .popularize-idol-production-head {
@@ -182,6 +195,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.popularize-idol-production-head:hover {
+  box-shadow: 0px 0px 20px #888888;
 }
 .broadcast-header-left {
   float: left;
@@ -203,9 +219,40 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.popularize-idol-music-head a:hover {
+  box-shadow: 0px 0px 20px #888888;
+}
 .music-head {
   margin: 10px 10px 10px 10px !important;
   width: 92%
+}
+.popularize-music-ahref {
+  margin: 5px 5px 5px 15px;
+}
+.popularize-idol-body-music a {
+  margin-left: 10px;
+  color:black;
+  letter-spacing: 1.5px;
+}
+.popularize-idol-body-music hr {
+  margin: 5px 0 5px 0;
+}
+.popularize-music-ahref:hover {
+  opacity: 0.6;
+  transform: scale(1.05);
+  position: relative;
+  left: 6px;
+  top: 0px;
+}
+.popularize-music-ahref a:hover{
+  text-decoration: none;
+  color: #72b5c5 !important;
+}
+
+.music-shadow {
+  background: #ccc;
+  padding: 2px 14px 2px 12px;
+  border-radius: 10%;
 }
 
 
@@ -214,6 +261,7 @@
 /****************************** 视频 ******************************/
 .idol-video-head {
   margin: 15px 15px 15px 15px;
+  transition: all 0.6s;
 }
 .idol-video-head a{
   display: block;
@@ -223,3 +271,19 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.idol-video-head:hover {
+  box-shadow: 5px 5px 20px #888888;
+  transform: scale(1.05);
+  opacity: 0.2;
+}
+/* .video-card-title {
+  font-size: 50px;
+  position: fixed;
+  bottom:10px;
+  right:10px;
+  color: #72b5c5;
+  display: none;
+}
+.video-card-title:hover {
+  display: inline;
+} */

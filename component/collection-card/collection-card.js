@@ -27,6 +27,3 @@ Vue.component('collection-card-component',
     </div> \
     "
 })
-
-
-

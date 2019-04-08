@@ -32,5 +32,17 @@ $('.carousel').carousel({
 
 
 /**
- * 视频部分轮播效果
+ * 视频部分文字显示
  */
+// function overShow() {
+//     var showDiv = document.getElementById('showDiv');
+//     showDiv.style.left = event.clientX;
+//     showDiv.style.top = event.clientY;
+//     showDiv.style.display = 'block';
+//     showDiv.document.writeln("<div class=\'video-card-title\'>卡莎</div>");
+// }
+// function outHide() {
+//     var showDiv = document.getElementById('showDiv');
+//     showDiv.style.display = 'block';
+//     showDiv.innerHTML = '';
+// }
