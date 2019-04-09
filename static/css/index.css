@@ -31,7 +31,7 @@
 }
 
 .logo{
-  width:90px;
+  width:60px;
   height:50px;
 }
 
@@ -104,10 +104,17 @@
 }
 
 /**************************** 广告 ****************************/
+#tf-advertisement {
+  position: relative;
+  background-color: rgb(158, 157, 157);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .advertisement{
-  background-color: #fff; 
-  margin-top:60px;
-  margin-bottom: 60px;
+  background-color: rgb(158, 157, 157); 
+  /* margin-top:60px;
+  margin-bottom: 60px; */
   padding:10px;
   height:100px;
   border-radius: 3px;
@@ -120,7 +127,7 @@
 
 /**************************** 推广 顶部标题 ****************************/
 .broadcast-panel{
-  background-color: #fff; 
+  /* background-color: #fff;  */
   margin-top:20px;
   padding:10px;
   /* height:900px; */
@@ -142,10 +149,21 @@
   padding-bottom: 10px;
   border-bottom: solid 2px #666;
 }
-
+.broadcast-header-img {
+  display: block;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 /************************ 推广 共用样式 ************************/
+#tf-popularize {
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#fff;
+}
 .popularize-idol-body {
   margin: 20px 0 15px 0;
 }
@@ -175,10 +193,12 @@
   position: relative;
   top: -2px;
   left: -2px;
+  cursor: pointer;
 }
 .popularize-idol-body-card:hover .card-img {
   box-shadow: 5px 5px 5px #888888;
 }
+
 
 /************************ 推广 偶像视频 ************************/
 .popularize-idol-video-head {
@@ -192,6 +212,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 3px;
+}
+.popularize-idol-video-head:hover {
+  cursor: pointer;
 }
 .popularize-idol-video-head:hover a {
   box-shadow: 5px 5px 20px #888888;
@@ -215,6 +239,7 @@
 .popularize-idol-video-head:hover .popularize-idol-video-head-text {
   display: block;
   opacity: 1;
+  cursor:pointer;
 }
 
 
@@ -230,6 +255,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.popularize-idol-production-head:hover {
+  cursor: pointer;
 }
 .popularize-idol-production-head:hover a{
   box-shadow: 5px 5px 20px #888888;
@@ -263,6 +291,7 @@
 .popularize-idol-production-head:hover .popularize-idol-production-head-text {
   display: block;
   opacity: 1;
+  cursor:pointer;
 }
 
 /************************ 推广 音乐 ************************/
@@ -276,6 +305,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.popularize-idol-music-head:hover {
+  cursor: pointer;
 }
 .popularize-idol-music-head:hover a{
   box-shadow: 5px 5px 20px #888888;
@@ -299,6 +331,7 @@
 .popularize-idol-music-head:hover .popularize-idol-music-head-text {
   display: block;
   opacity: 1;
+  cursor:pointer;
 }
 .music-head {
   margin: 10px 10px 10px 10px !important;
@@ -321,6 +354,7 @@
   position: relative;
   left: 6px;
   top: 0px;
+  cursor: pointer;
 }
 .popularize-music-ahref:hover a{
   text-decoration: none;
@@ -340,9 +374,17 @@
 
 
 /****************************** 视频 ******************************/
+#tf-video{
+  position: relative;
+  background-color: #efefef;
+  width: 100%;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
 .idol-video-head {
-  margin: 15px 15px 15px 15px;
+  margin: 30px 15px 15px 15px;
   transition: all 0.6s;
+  border: none;
 }
 .idol-video-head a{
   display: block;
@@ -355,6 +397,7 @@
 .idol-video-head:hover {
   box-shadow: 5px 5px 20px #888888;
   transform: scale(1.05);
+  cursor: pointer;
 }
 .idol-video-head:hover .video-card-title {
   display: block;
@@ -390,4 +433,307 @@
   word-wrap: break-word;
   font-size: 15px;
   padding-left: 10px;
+}
+
+
+
+
+/****************************板块导航****************************/
+
+.part-title{
+  font-size:33px;
+  font-weight: 600;
+  letter-spacing: 15px;
+  text-align: center;
+  padding-top:20px;
+}
+
+.part-nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding: 15px 0 15px 0;
+}
+
+
+.part-tab{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.part-tab-item{
+  
+
+  cursor: pointer;
+  color:#999;
+}
+
+
+#part-refresh{
+  border-radius: 3px;
+  border:solid 1px #ccc;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  background-color:#eee;
+  color:#999;
+}
+#part-refresh:hover{
+  background-color:#ddd;
+  color:#666;
+}
+
+#part-more{
+  border-radius: 3px;
+  border:solid 1px #ccc;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  background-color:#eee;
+  color:#999;
+}
+#part-more:hover{
+  background-color:#ddd;
+  color:#666;
+}
+.tab-on{
+  color:#333 !important;
+}
+
+
+
+/****************************音乐榜*****************************/
+#tf-music{
+  position: relative;
+  background-color:#efefef;
+  width:100%;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+
+/*************************************音乐列表*******************************/
+.music-list{
+  width:100%;
+  height:450px;
+  /* background-color: #666; */
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.music-item{
+  height: fit-content;
+  width:30%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #ccc;
+  justify-content:space-between;
+}
+
+.music-cover{
+  width:80px;
+  height:80px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+}
+
+
+.music-cover-img{
+  width:100%;
+  height:inherit;
+}
+.cover-overlay-black{
+  position: absolute;
+  top:0;
+  right:0;
+  width:100%;
+  height: inherit;
+  background-color:#333;
+  opacity: 0.5;
+  display: none;
+}
+
+.cover-play-icon{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:inherit;
+  padding:30px;
+  opacity: 0;
+}
+
+.music-overview{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+}
+.music-overview a{
+  display: block;
+  text-decoration: none;
+}
+.music-overview a:nth-child(1){
+  font-size: 17px;
+}
+
+.music-duration{
+  display: flex; 
+  flex-direction: column;
+  justify-content:center;
+  color: #ccc;
+}
+
+/* *************************** 播放控制按钮 *************************** */
+.carousel-control-custom{
+  width:100%;
+  text-align: center;
+  font-size: 120px;
+  line-height: 0;
+  background-color:#dedede;
+  opacity: 0.7;
+}
+
+.carousel-control-custom:hover{
+  opacity: 1;
+}
+
+.carousel-control-custom img{
+  width:100px;
+  height:100px;
+  padding:20px;
+  
+}
+
+.left-btn{
+  position: absolute;
+  width:100px;
+  height:624px;
+  left:-100px;
+  top:0;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  
+}
+
+.right-btn{
+  position: absolute;
+  width:100px;
+  height:624px;
+  right:-100px;
+  top:0;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  
+}
+
+/****************************轻小说榜*****************************/
+#tf-novel{
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#fff;
+}
+.novel-list-part{
+  border-radius: 5px;
+  background-color:#efefef;
+  padding:10px;
+}
+.novel-part-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom:solid 1px #ccc;
+  padding-bottom: 10px;
+}
+.novel-part-title p{
+  color:#636363;
+  font-weight: 600;
+  margin: 0;
+}
+.novel-part-title a{
+  text-decoration: none;
+}
+
+
+/* 列表中的每部小说的详细信息 */
+.novel-item{
+  /* 在鼠标移动上去之前是 34px */
+  height: 34px; 
+  padding-top:5px;
+  overflow: hidden;
+  /* padding-bottom: 5px; */
+  border-top: dotted 1px #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.novel-item-num{
+  /* background-color:#fff; */
+  
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  width:18px;
+  height:18px;
+  color:#bbb;
+
+}
+
+.novel-title a{
+  color:#333;
+  text-decoration: none;
+  display: inline;
+  margin-left:5px;
+}
+.novel-title a:hover{
+  color:#0bc5f3;
+}
+
+.novel-title div{
+  margin-left:25px;
+  font-size:13px;
+  margin-top:3px;
+}
+.novel-hot{
+  margin-top:8px !important;
+  color:#9c9c9c;
+}
+.novel-author a{
+  font-size:13px;
+  color:#9c9c9c;
+}
+.novel-author a:hover{
+  color:#0bc5f3;
+}
+.novel-status{
+  color:#686868;
+}
+
+.author{
+  color:#bababa;
+}
+.novel-cover{
+  width:82px;
+  height:95px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #bbb;
+}
+.novel-on{
+  /* border:none; */
+  padding-top:15px;
+  padding-bottom:15px;
+  /* 当鼠标移动到上面时，宽度变为 125px */
+  height:125px; 
 }
