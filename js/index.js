@@ -26,7 +26,7 @@ new Vue(
  * 自动轮播时间设为2秒
  */
 $('.carousel').carousel({
-    interval: 2000
+    interval: 20000
 })
 
 
@@ -74,7 +74,7 @@ $(function(){
         $(this).addClass("tab-on");
     })
 
-    // 音乐封边的变化
+    // 音乐封面的变化
     $(".music-cover").hover(function(){
         $(this).find(".cover-overlay-black").css("display","inline");
         $(this).find(".cover-play-icon").animate({opacity:"0.9", padding:"25px"},250);
@@ -84,6 +84,14 @@ $(function(){
         $(this).find(".cover-overlay-black").css("display","none");
         $(this).find(".cover-play-icon").animate({opacity:"0", padding:"30px"},250);
         $(this).find(".music-cover-img").animate({width:"80px",height:"80px",marginTop:"0px",marginLeft:"0px"},250);
+    })
+
+    // 推广部分音乐封面的变化
+    $(".songList-list-item-coverPic").hover(function(){
+        $(this).find(".cover-play-icon").animate({opacity:"0.9", padding:"6px"},500);
+    },
+    function(){
+        $(this).find(".cover-play-icon").animate({opacity:"0", padding:"10px"},300);
     })
 
 
