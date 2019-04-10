@@ -181,8 +181,12 @@
   font-weight: 600;
   cursor: pointer;
 }
-.popularize-idol-body-card-title:hover {
+.popularize-idol-body-card-title a {
+  color: #111;
+}
+.popularize-idol-body-card-title a:hover {
   color: #72b5c5;
+  text-decoration: none;
 }
 .popularize-idol-body-card-author {
   display: flex;
@@ -197,8 +201,9 @@
   line-height: 30px;
   cursor: pointer;
 }
-.popularize-idol-body-card-author:hover {
+.popularize-idol-body-card-author a:hover {
   color: #72b5c5;
+  text-decoration: none;
 }
 .popularize-idol-body-card {
   margin-bottom: 15px;
@@ -210,6 +215,9 @@
 .popularize-idol-body-card img {
   height: 60px;
   width: 60px;
+}
+.popularize-idol-body-card img:hover {
+  box-shadow: 0 0 5px #111;
 }
 
 .limit {
@@ -273,6 +281,10 @@
 }
 
 
+/************************ 轮播图按钮 ************************/
+.btn-slide {
+
+}
 
 
 /************************ 推广 偶像视频 ************************/
@@ -459,13 +471,9 @@
 }
 .idol-video-head:hover {
   box-shadow: 5px 5px 20px #888888;
-  transform: scale(1.05);
   cursor: pointer;
 }
-.idol-video-head:hover .video-card-title {
-  display: block;
-  opacity: 1 !important;
-}
+
 .idol-video-head:hover a {
   opacity: 0.6;
 }
@@ -483,7 +491,6 @@
   background: #000;
   background: linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9));
   border-radius: 3px;
-  display: none;
 }
 
 
@@ -495,7 +502,6 @@
   word-break: break-all;
   word-wrap: break-word;
   font-size: 15px;
-  padding-left: 10px;
 }
 
 
