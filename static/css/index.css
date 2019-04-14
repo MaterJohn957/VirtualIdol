@@ -216,14 +216,20 @@
   height: 60px;
   width: 60px;
 }
-.popularize-idol-body-card img:hover {
+/* .popularize-idol-body-card img:hover {
   box-shadow: 0 0 5px #111;
-}
+} */
 
 .limit {
   height: 162px;
 }
-
+.video-cover-change {
+  position: relative;
+  display: block;
+}
+.cover-play-btn {
+  padding: 20px;
+}
 
 /************************ 推广轮播图 ************************/
 .slide-point-video {
@@ -281,6 +287,7 @@
 }
 
 
+
 /************************ 轮播图按钮 ************************/
 .btn-slide {
 
@@ -323,9 +330,9 @@
   display: none;
 }
 .popularize-idol-video-head-text p {
-  position: absolute;
-  top: 35px;
-  left: 10px;
+  position: flex;
+  margin-top: 8px;
+  margin-left: 10px;
   color: #888888;
   font-size: 15px;
 }
@@ -372,9 +379,9 @@
   display: none;
 }
 .popularize-idol-production-head-text p {
-  position: absolute;
-  top: 35px;
-  left: 10px;
+  position: flex;
+  margin-top: 8px;
+  margin-left: 10px;
   color: #888888;
   font-size: 15px;
 }
@@ -460,8 +467,9 @@
   margin: 30px 15px 15px 15px;
   transition: all 0.6s;
   border: none;
+  background-color: #000;
 }
-.idol-video-head a{
+.idol-video-head img{
   display: block;
   width: 248px;
   height:162px;
@@ -502,9 +510,41 @@
   word-break: break-all;
   word-wrap: break-word;
   font-size: 15px;
+  margin-left: 10px;
 }
 
 
+.video-bg {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: white;
+  display: none;
+}
+.video-bg p {
+  position: flex;
+  margin-top: 8px;
+  margin-left: 10px;
+  color: #888888;
+  font-size: 15px;
+}
+.video-card:hover .video-bg {
+  display: block;
+  opacity: 1;
+  cursor:pointer;
+}
+.video-card:hover .video-card-title {
+  display: none;
+}
+.video-card:hover img {
+  opacity: 0.2;
+}
+.title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
 
 /****************************板块导航****************************/
@@ -575,7 +615,7 @@
 /****************************音乐榜*****************************/
 #tf-music{
   position: relative;
-  background-color:#efefef;
+  background-color:#fff;
   width:100%;
   padding-top:20px;
   padding-bottom: 20px;
@@ -704,10 +744,140 @@
   
 }
 
+/************************** 同人画廊 ****************************/
+#tf-gallery{
+  position: relative;
+  background-color:#efefef;
+  width:100%;
+  padding-top:20px;
+  padding-bottom: 40px;
+}
+
+.card-head-custom{
+  position: relative;cursor: pointer;
+}
+
+.card-img-overlay-black{
+  position: absolute;
+  top:0;
+  left:0;
+  background-color:#121212;
+  opacity: 0.7;
+  width:100%;
+  height:100%;
+  display: none;
+}
+.card-img-overlay-eye{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display:none;
+}
+.eye-f-background{
+  width:75px;
+  height:75px;
+  padding:20px;
+  opacity: 0.85;
+  background-color:#fff;
+  border-radius: 50%;
+}
+.eye-f-background img{
+  width:100%;
+  height:100%;
+}
+
+.card-gallery-custom{
+  border-radius: 0;
+}
+
+
+.image-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-details-left{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+.user-profile{
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px #232323;
+}
+.image-from{
+  margin-left:20px;
+}
+.image-from a{
+  display: block;
+  text-decoration: none;
+}
+.image-from a:nth-child(1){
+  font-size: 13px;
+}
+.image-from a:nth-child(2){
+  font-size: 10px;
+}
+
+.image-details-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.image-details-right a{
+  display: block;
+  font-size: 18px;
+  width:25px;
+  height:25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left:13px;
+  border:solid 1px #ccc;
+  /* box-shadow: 0 0 2px #888; */
+}
+
+.gallery-more-btn{
+  width:150px;
+  height:60px;
+  line-height: 60px;
+  text-align: center;
+  border:solid 1px #ccc;
+  font-size: 20px;
+  display: block;
+  margin:40px auto;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+/*********************查看图片的模态对话框*************************/
+.modal-content-custom{
+  display: flex;
+  flex-direction: column;
+}
+.modal-content-custom .close{
+  align-self: flex-end;
+}
+.modal-content-custom .fa-close{
+  color:#fff;
+  font-size: 45px;
+}
+
 /****************************轻小说榜*****************************/
 #tf-novel{
   padding-top:20px;
-  padding-bottom:20px;
+  padding-bottom:40px;
   background-color:#fff;
 }
 .novel-list-part{

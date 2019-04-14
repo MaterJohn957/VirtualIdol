@@ -95,6 +95,15 @@ $(function(){
     })
 
 
+    //推广视频部分封面变化
+    $(".video-cover-change").hover(function(){
+        $(this).find(".cover-overlay-black").css("display","block");
+        $(this).find(".cover-play-btn").animate({opacity:"0.9", padding:"15px"},300);
+    },
+    function(){
+        $(this).find(".cover-overlay-black").css("display","none");
+        $(this).find(".cover-play-btn").animate({opacity:"0", padding:"20px"},200);
+    })
 
     // 初始化小说列表
     
@@ -153,5 +162,23 @@ $(function(){
         $(this).find(".novel-cover").css("display","block");
         $(this).find(".author").css("display","none");
     })
+
+
+
+    $(".card-head-custom").hover(function(){
+        $(this).find(".card-img-overlay-black").css("display","block");
+        $(this).find(".card-img-overlay-eye").css("display","flex");
+        $(this).find(".eye-f-background").animate({width:"90px",height:"90px"},200);
+    },function(){
+        $(this).find(".card-img-overlay-black").css("display","none");
+        $(this).find(".card-img-overlay-eye").css("display","none");
+        $(this).find(".eye-f-background").animate({width:"75px",height:"75px"},200);
+    })
+
+    $(".card-head-custom").click(function(){
+        var imgUrl = $(this).find(".gallery-image").attr("src");
+        $("#view-image-detail").attr("src", imgUrl);
+    })
 })
+
 
