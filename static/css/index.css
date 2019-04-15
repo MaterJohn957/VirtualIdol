@@ -111,20 +111,19 @@
 }
 
 /**************************** 广告 ****************************/
-.advertisement {
+.advertisement-frame {
   position: relative;
   background-color:#ccc;
-  /* background-color: rgb(158, 157, 157); */
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.advertisement{
+.advertisement-pic {
   padding:10px;
   height:100px;
   border-radius: 3px;
 }
-.advertisement-img {
+.advertisement-pic-img {
   display: block;
   height: 80px;
   margin: 0 auto;
