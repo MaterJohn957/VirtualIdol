@@ -2,18 +2,25 @@
 .header{
   position: relative;
   width:100%;
-  height:650px;
+  height:500px;
   background: url(../img/bg-top.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+#navbar{
+  position: fixed;
+  top:-10;
+  z-index: 999;
+  width:100%;
+}
+
 /* 新navbar样式 */
 .nav-bg{
   width:100%;
   position: absolute;
-  z-index: 99;
+  padding:0;
 }
 
 .nav-link{
@@ -23,9 +30,9 @@
 .nav-blur{
   position: absolute;
   width:100%;
-  height:81px;
+  height:65px;
   filter:blur(1px);
-  box-shadow: 0px 1px 0px 0px #777;
+  box-shadow: 0px 1px 0px 0px #333;
   background:#fff;background:rgba(255,255,255,.14);
   z-index: 50;
 }
@@ -47,7 +54,7 @@
   position: absolute;
   z-index:10;
   width:100%;
-  top:180px;
+  top:130px;
 }
 
 .text{
@@ -104,17 +111,15 @@
 }
 
 /**************************** 广告 ****************************/
-#tf-advertisement {
+.advertisement {
   position: relative;
-  background-color: rgb(158, 157, 157);
+  background-color:#ccc;
+  /* background-color: rgb(158, 157, 157); */
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 .advertisement{
-  background-color: rgb(158, 157, 157); 
-  /* margin-top:60px;
-  margin-bottom: 60px; */
   padding:10px;
   height:100px;
   border-radius: 3px;
@@ -127,10 +132,8 @@
 
 /**************************** 推广 顶部标题 ****************************/
 .broadcast-panel{
-  /* background-color: #fff;  */
-  margin-top:20px;
+  /* margin-top:20px; */
   padding:10px;
-  /* height:900px; */
   border-radius: 3px;
 }
 
@@ -284,13 +287,6 @@
   padding-top: 132px;
   color: white;
   opacity: 1;
-}
-
-
-
-/************************ 轮播图按钮 ************************/
-.btn-slide {
-
 }
 
 
@@ -457,10 +453,8 @@
 
 /****************************** 视频 ******************************/
 #tf-video{
-  position: relative;
-  background-color: #efefef;
   width: 100%;
-  padding-top: 0px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 .idol-video-head {
@@ -615,7 +609,6 @@
 /****************************音乐榜*****************************/
 #tf-music{
   position: relative;
-  background-color:#fff;
   width:100%;
   padding-top:20px;
   padding-bottom: 20px;
@@ -626,7 +619,6 @@
 .music-list{
   width:100%;
   height:450px;
-  /* background-color: #666; */
   padding: 30px 0 30px 0;
   display: flex;
   flex-direction: row;
@@ -975,4 +967,37 @@
   padding-bottom:15px;
   /* 当鼠标移动到上面时，宽度变为 125px */
   height:125px; 
+}
+
+
+
+/***********************左侧导航栏***********************/
+
+#nav-left{
+  background-color:#fff;
+  position: fixed;
+  right: 0;
+  bottom: 10vh;
+  z-index:99;
+  box-shadow: 0 0 15px #bcbcbc;
+  display: none;
+}
+#nav-left-backtop{
+  width:45px;
+  height:45px;
+}
+#nav-left-backtop a{
+  display: block;
+  width:100%;
+  height:100%;
+  text-align: center;
+  line-height: 0px;
+  text-decoration: none;
+  padding:5px;
+}
+#nav-left-backtop a i{
+  font-size: 30px;
+}
+#nav-left-backtop a span{
+  font-size: 8px;
 }

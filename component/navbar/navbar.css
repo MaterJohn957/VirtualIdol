@@ -6,11 +6,9 @@
     background-color:#fff !important;
     padding:0;
     border-bottom: 1px solid rgba(0,0,0,.125);
-    box-shadow: 0 0.5px 1px #ccc;
+    box-shadow: 0 0px 15px #ccc;
     width:100%;
-    z-index: 2;
-    position: fixed;
-    top:0;
+    opacity: 0.95;
 }
 
 .logo{

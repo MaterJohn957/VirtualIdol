@@ -2,25 +2,24 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>D20的个人空间</title>
+    <title>欢迎来到虚拟姬</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="lib/bootstrap-4.1.3-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/style.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="component/navbar/navbar.css"/> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="component/idol-studio-card/idol-studio-card.css"/> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="component/navbar/navbar.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/index.css" />
 </head>
 <body>
-    <!-- <div id="navbar">
+    <div id="navbar">
         <navbar-component></navbar-component>
-    </div> -->
+    </div>
     <div class="header">
         <nav class="navbar navbar-expand-lg nav-bg">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img class="logo" src="static/img/logo.png"></a>
                 <div>
-                    <ul class="navbar-nav navbar-right">
+                    <ul class="navbar-nav navbar-left">
                         <li class="nav-item"><a class="nav-link" href="#">主站</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">比赛</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">直播</a></li>
@@ -31,7 +30,7 @@
                 </div>
             </div>
         </nav>
-
+        
         <div class="nav-blur"></div>
 
         <div class="black-overlay"></div>
@@ -48,23 +47,25 @@
         <div class="header-nav-bottom">
             <div class="container">
                 <ul class="header-nav-list">
-                    <li class="header-nav-item"><a href="#">推广</a></li>
-                    <li class="header-nav-item"><a href="#">视频</a></li>
-                    <li class="header-nav-item"><a href="#">音乐</a></li>
-                    <li class="header-nav-item"><a href="#">图库</a></li>
-                    <li class="header-nav-item" style="border:none;"><a href="#">轻小说</a></li>
+                    <li data-target="popularize" class="header-nav-item"><a href="javascript:;" data-target="#tf-popularize">推广</a></li>
+                    <li data-target="video" class="header-nav-item"><a href="javascript:;" data-target="#tf-video">视频</a></li>
+                    <li data-target="music" class="header-nav-item"><a href="javascript:;" data-target="#tf-music">音乐</a></li>
+                    <li data-target="pic" class="header-nav-item"><a href="javascript:;" data-target="#tf-novel">轻小说</a></li>
+                    <li data-target="novel" class="header-nav-item" style="border:none;"><a href="javascript:;" data-target="#tf-gallery">图库</a></li>
                 </ul>
             </div>
-            
         </div>
 
 
     </div>
     
     <!------------------------------------------- 推广 ------------------------------------------->
-    <div id="tf-popularize">
+    <div id="tf-popularize" style="background-color:#efefef;">
         <div class="container">
-            <div id="broadcast-panel" class="broadcast-panel">
+            <div class="broadcast-panel">
+                <div class="part-title">
+                    全站推广
+                </div>
                 <div class="row">
                     <div class="col-3">
                         <div class="broadcast-header">
@@ -414,25 +415,37 @@
 
 
     <!------------------------------------------- 广告1 ------------------------------------------->
-    <div id="tf-advertisement">
+    <!-- <div class="advertisement">
         <div class="container">
-            <div id="advertisement" class="advertisement">
+            <div class="advertisement">
                 <img class="advertisement-img" src="static/img/advertisement.png">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!------------------------------------------- 视频 ------------------------------------------->
-    <div id="tf-video">
+    <div id="tf-video" style="background-color:#fff;">
         <div class="container">
-            <div id="broadcast-panel" class="broadcast-panel">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="part-title">
-                            最热视频榜
-                        </div>
+            <div class="broadcast-panel">
+                <div class="part-title">
+                    最新视频区
+                </div>
+
+                <div class="part-nav">
+                    <div id="part-refresh">
+                        换一批 <i class="fa fa-refresh"></i>
                     </div>
 
+                    <div class="part-tab">
+                        <div  class="tab-on part-tab-item" id="music-tab-hot" style="margin-right:10px;">最热</div>
+                        <div  class="part-tab-item" id="music-tab-new" style="margin-left:10px;">最新</div>
+                    </div>
+
+                    <div id="part-more">
+                        查看更多 <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="row">
                     <a href="#" target="_blank" class="video-card" title="洛与5个小姐姐私奔？" >
                         <div id="showDiv" class="card idol-video-head">
                             <img src="static/img/video-1.jpg">
@@ -520,81 +533,18 @@
     </div>
    
 
-
-
-
     <!------------------------------------------- 广告2 ------------------------------------------->
-    <div id="tf-advertisement">
+    <!-- <div class="advertisement">
         <div class="container">
-            <div id="advertisement" class="advertisement">
+            <div class="advertisement">
                 <img class="advertisement-img" src="static/img/advertisement.png">
             </div>
         </div>
-    </div>
-
-
-
-    <!-- 并没有用上的轮播图 -->
-    <!-- <div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    
-
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="#" target="_blank" class="content-img" style="background-image: url('static/img/slides-1.jpg')"></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>重庆大学小薇</h5>
-                                    <p>虚拟姬，定义新的自己！</p>
-                                </div>
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <a href="#" target="_blank" class="content-img" style="background-image: url('static/img/slides-2.jpg')"></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>虚拟姬小薇</h5>
-                                    <p>虚拟姬，定义新的自己！</p>
-                                </div>
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <a href="#" target="_blank" class="content-img" style="background-image: url('static/img/slides-3.jpg')"></a>
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>重庆大学小薇</h5>
-                                    <p>虚拟姬，定义新的自己！</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">上一个</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">下一个</span>
-                        </a>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
     </div> -->
-    
-    
-    
 
 
     <!------------------------------------------- 音乐 ------------------------------------------->
-    <div id="tf-music">
+    <div id="tf-music"  style="background-color:#efefef;">
         <div class="container">
             <div class="part-title">
                 最新音乐榜
@@ -1119,330 +1069,15 @@
     </div>
 
     <!------------------------------------------- 广告3 ------------------------------------------->
-    <div id="tf-advertisement">
+    <!-- <div class="advertisement">
         <div class="container">
             <div id="advertisement" class="advertisement">
                 <img class="advertisement-img" src="static/img/advertisement.png">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!------------------------------------------- 图库 ------------------------------------------->
-    <div id="tf-gallery">
-        <div class="container">
-            <div class="part-title">
-               同人画廊
-            </div>
-
-            <div class="part-nav">
-                <div id="part-refresh">
-                    换一批 <i class="fa fa-refresh  fa-spin"></i>
-                </div>
-
-                <div class="part-tab">
-                    <div  class="tab-on part-tab-item" id="novel-tab-hot" style="margin-right:10px;">最热</div>
-                    <div  class="part-tab-item" id="novel-tab-new" style="margin-left:10px;">最新</div>
-                </div>
-
-                <div id="part-more">
-                    查看更多 <i class="fa fa-chevron-right"></i>
-                </div>
-            </div>
-
-            <div class="gallery">
-                <div class="card-columns">
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/bg-register.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/profile-big.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/novel-cover-1.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/bg-register.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/novel-cover-1.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/idol.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/profile.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-gallery-custom">
-                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
-                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
-                            <div class="card-img-overlay-black"></div>
-                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
-                        </div>
-                        <div class="card-body" style="padding:13px;">
-                            <div class="image-details">
-                                <div class="image-details-left">
-                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
-                                    <div class="image-from">
-                                        <a href="#">作品名</a>
-                                        <a href="#">作者（1）</a>
-                                    </div>
-                                </div>
-
-                                <div class="image-details-right">
-                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
-                                    <a href="#"><i class="fa fa-star-o"></i></a>
-                                    <a href="#"><i class="fa fa-download"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="gallery-more-btn">查看更多</div>
-        </div>
-    </div>
-
-    <!------------------------------------------- 广告4 ------------------------------------------->
-    <div id="tf-advertisement">
-        <div class="container">
-            <div id="advertisement" class="advertisement">
-                <img class="advertisement-img" src="static/img/advertisement.png">
-            </div>
-        </div>
-    </div>
-
-    <!------------------------------------------- 轻小说 ------------------------------------------->
     <div id="tf-novel">
         <div class="container">
              <div class="part-title">
@@ -1829,9 +1464,333 @@
         </div>
     </div>
 
+    <!------------------------------------------- 广告4 ------------------------------------------->
+    <!-- <div class="advertisement">
+        <div class="container">
+            <div id="advertisement" class="advertisement">
+                <img class="advertisement-img" src="static/img/advertisement.png">
+            </div>
+        </div>
+    </div> -->
+
+    <!------------------------------------------- 轻小说 ------------------------------------------->
+
+    <div id="tf-gallery">
+        <div class="container">
+            <div class="part-title">
+               同人画廊
+            </div>
+
+            <div class="part-nav">
+                <div id="part-refresh">
+                    换一批 <i class="fa fa-refresh  fa-spin"></i>
+                </div>
+
+                <div class="part-tab">
+                    <div  class="tab-on part-tab-item" id="novel-tab-hot" style="margin-right:10px;">最热</div>
+                    <div  class="part-tab-item" id="novel-tab-new" style="margin-left:10px;">最新</div>
+                </div>
+
+                <div id="part-more">
+                    查看更多 <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <div class="gallery">
+                <div class="card-columns">
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/bg-register.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/profile-big.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/novel-cover-1.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/bg-register.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/novel-cover-1.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/idol.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/profile.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-gallery-custom">
+                        <div class="card-head-custom" type="button"  data-toggle="modal" data-target="#view-image">
+                            <img class="card-img-top gallery-image" src="static/img/video-cover.jpg" alt="Card image">
+                            <div class="card-img-overlay-black"></div>
+                            <div class="card-img-overlay-eye"><div class="eye-f-background"><img src="static/img/f.svg"></div></div>
+                        </div>
+                        <div class="card-body" style="padding:13px;">
+                            <div class="image-details">
+                                <div class="image-details-left">
+                                    <a href="#"><img class="user-profile" src="static/img/profile.jpg"></a>
+                                    <div class="image-from">
+                                        <a href="#">作品名</a>
+                                        <a href="#">作者（1）</a>
+                                    </div>
+                                </div>
+
+                                <div class="image-details-right">
+                                    <a href="#"><i class="fa fa-thumbs-o-up"></i></a>
+                                    <a href="#"><i class="fa fa-star-o"></i></a>
+                                    <a href="#"><i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="gallery-more-btn">查看更多</div>
+        </div>
+    </div>
+
     
 
-
+    <!-- 左侧的固定侧边按钮栏 -->
+    <div id="nav-left">
+        <div id="nav-left-backtop">
+            <a href="javascript:;">
+                <i class="fa fa-angle-double-up"></i>
+                <span>TOP</span>
+            </a>
+        </div>
+    </div>
 
 
 
