@@ -11,7 +11,7 @@ Vue.component('subscription-component',
     <div class='card'> \
         <img class='card-img-top' src='static/img/idol.jpg' alt='Card image cap'> \
         <div class='card-body'> \
-            <h5 class='card-title'><a href='#'>偶像一</a></h5> \
+            <h5 class='card-title content-title'><a href='#'>偶像一</a></h5> \
             <p class='card-text'>该偶像的简单介绍</p> \
             <p class='card-text'><small class='text-muted'>3小时前更新</small></p> \
         </div> \

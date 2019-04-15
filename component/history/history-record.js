@@ -10,7 +10,7 @@ Vue.component('history-record-component',
         <div class="h-100 r-info float-right"> \
             <div class="media"> \
                 <a href="#" class="align-self-start mr-3"> \
-                    <img class="rounded" src="asserts/img/9c82be07893d29770c9c2c1242639ec45d4c119d.jpg@160w_100h.webp"> \
+                    <img class="rounded" src="static/img/profile.jpg"> \
                 </a> \
                 <div class="media-body"> \
                     <a href="#" class="title">Top-aligned media</a> \

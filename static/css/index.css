@@ -3,7 +3,7 @@
   position: relative;
   width:100%;
   height:500px;
-  background: url(../img/bg-top.jpg);
+  background: url(../img/bg-top.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,6 +25,9 @@
 
 .nav-link{
   color:#ccc;
+}
+.nav-link:hover {
+  color: rgb(91, 158, 235);
 }
 
 .nav-blur{
@@ -98,7 +101,7 @@
 .header-nav-item a:hover {
   opacity: 0.6;
   text-decoration: none;
-  color: #72b5c5;
+  color: rgb(91, 158, 235);
 }
 
 /************************ 轮播图图片 ************************/
@@ -187,7 +190,7 @@
   color: #111;
 }
 .popularize-idol-body-card-title a:hover {
-  color: #72b5c5;
+  color: rgb(91, 158, 235);
   text-decoration: none;
 }
 .popularize-idol-body-card-author {
@@ -204,7 +207,7 @@
   cursor: pointer;
 }
 .popularize-idol-body-card-author a:hover {
-  color: #72b5c5;
+  color: rgb(91, 158,  235);
   text-decoration: none;
 }
 .popularize-idol-body-card {
@@ -438,11 +441,11 @@
 }
 .songList-list-item-songName:hover {
   text-decoration: none;
-  color: #72b5c5;
+  color: rgb(91, 158,  235);
 }
 .songList-list-item-songTime:hover {
   text-decoration: none;
-  color: #72b5c5;
+  color: rgb(91, 158,  235);
 }
 
 
@@ -548,6 +551,9 @@
   letter-spacing: 15px;
   text-align: center;
   padding-top:20px;
+}
+.part-title img {
+  height: 130px;
 }
 
 .part-nav{
@@ -678,6 +684,9 @@
 .music-overview a{
   display: block;
   text-decoration: none;
+}
+.music-overview a:hover{
+  color: rgb(91, 158,  235);
 }
 .music-overview a:nth-child(1){
   font-size: 17px;
@@ -928,7 +937,7 @@
   margin-left:5px;
 }
 .novel-title a:hover{
-  color:#0bc5f3;
+  color:rgb(91, 158,  235);
 }
 
 .novel-title div{
@@ -945,7 +954,7 @@
   color:#9c9c9c;
 }
 .novel-author a:hover{
-  color:#0bc5f3;
+  color:rgb(91, 158, 235);
 }
 .novel-status{
   color:#686868;

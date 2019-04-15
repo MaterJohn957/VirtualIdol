@@ -52,3 +52,6 @@
 .content-btn-list a:hover{
     text-decoration: none;
 }
+.content-title:hover a {
+    text-decoration: none;
+}
