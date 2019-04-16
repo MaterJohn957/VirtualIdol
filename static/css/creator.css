@@ -1,0 +1,211 @@
+#navbar{
+    width:100%;
+    position: fixed;
+    top:0;
+    z-index:999;
+}
+
+#tf-main{
+    width: 100%;
+    padding: 0px 20px 40px 20px;
+    /* margin-top: 70px; */
+    margin-bottom: 35px;
+    background-color: #fafafa;
+    /* border-radius: 5px; */
+    box-shadow: 0 0 5px #ccc;
+}
+
+.page-title{
+    width:100%;
+    /* text-align: center; */
+    padding: 20px 15px 20px 25px;
+    background-color: #fafafa;
+    margin:0;
+    font-weight: 600;
+}
+
+.page-divided-line{
+    height:10px;
+    background-color: #1499ed;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+.page-empty-space{
+    position: relative;
+    /* padding: 20px 15px 20px 15px; */
+    border-left:solid 1px #ccc;
+    height:50px;
+}
+
+.resume-title{
+    position: absolute;
+    width:150px;
+    height:40px;
+    /* background-color:#ccc; */
+    background-image: url(../img/resume-title-bg.png);
+    color:#fff;
+    /* text-align: center; */
+    padding-left:20px;
+    line-height: 30px;
+    left:-10px;
+    top:-30px;
+}
+
+/**************************经济人简单介绍信息*************************/
+
+.creator-info{
+    position: relative;
+    padding:10px 0 50px 15px;
+    border-top:solid 1px #ccc;
+    border-left:solid 1px #ccc;
+}
+
+
+
+.creator-profile{
+    width:100%;
+    padding:15px;
+}
+.creator-profile-detail{
+    /* border: solid 1px #ccc; */
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.creator-profile-img{
+    width: 100%;
+}
+
+.creator-profile-overlay{
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    background-color:#202020;
+    opacity: 0.9;
+    color:#fff;
+    text-align: center;
+    padding: 3px 6px 3px 6px;
+    border-radius: 3px;
+}
+
+.creator-profile-overlay p{
+    font-size: 13px;
+    margin: 0;
+}
+
+
+.creator-info-text{
+    padding:15px;
+    display: flex;
+    flex-direction: left;
+    flex-wrap: wrap;
+}
+
+.creator-info-text-item{
+    margin-left:40px;
+    margin-bottom:15px;
+}
+
+.creator-info-edit{
+    padding:15px;
+    width:100%;
+    text-align: right;
+}
+
+
+/*****************************偶像基本列表****************************/
+.idol-list{
+    width:100%;
+    overflow-x: scroll;
+    white-space:nowrap;
+}
+
+.idol{
+    display:inline-block;
+    margin:10px 15px 10px 15px;
+    width:250px;
+    height:400px;
+    box-shadow: 0 0 3px #aaa;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.idol:hover{
+    box-shadow: 0 0 10px #aaa;
+}
+
+.idol a{
+    position: relative;
+}
+
+.idol a .idol-content{
+    position: absolute;
+    top:0;
+    width:250px;
+    height:400px;
+}
+.create-idol-icon{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create-idol-icon:hover{
+    background-color:#1499ed;
+    color:#fff;
+}
+
+.idol-name{
+    position: absolute;
+    width: fit-content;
+    bottom:10px;
+    left:10px;
+    padding: 3px 6px 3px 6px;
+    background-color: #202020;
+    opacity: 0.9;
+    color:#fff;
+    border-radius: 3px;
+}
+
+.idol-list::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+}
+.idol-list::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: #1499ed;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+.idol-list::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+
+/************************技能列表********************/
+.skill-list{
+    padding:15px 15px 15px 30px;
+}
+
+.skill{
+    list-style-type: disc;
+    margin-bottom: 15px;
+}
+
+/***********************创作经历*************************/
+.creation-list{
+    padding:15px 15px 15px 30px;
+}
+
+.creation{
+    list-style-type: disc;
+    margin-bottom: 15px;
+}
+
+/***********************自我评价*************************/
+.self-evaluation{
+    padding:15px;
+}

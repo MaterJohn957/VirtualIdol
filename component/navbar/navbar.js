@@ -50,7 +50,7 @@ Vue.component('navbar-component',
                         <a class='nav-link' href='message.html' data-toggle='tooltip' data-placement='bottom' title='消息中心'><i class='fa fa-bell'></i></a> \
                     </li> \
                     <li class='nav-item'> \
-                        <a class='nav-link' href='broker.html' data-toggle='tooltip' data-placement='bottom' title='前往经纪人办公室'><i class='fa fa-user'></i></a> \
+                        <a class='nav-link' href='creator.html' data-toggle='tooltip' data-placement='bottom' title='前往经纪人办公室'><i class='fa fa-user'></i></a> \
                     </li> \
                 </ul> \
             </div> \
