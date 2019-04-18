@@ -585,7 +585,7 @@
 }
 #part-refresh:hover{
   background-color:#ddd;
-  color:#666;
+  color:rgb(91, 158, 235);
 }
 
 #part-more{
@@ -598,11 +598,12 @@
 }
 #part-more:hover{
   background-color:#ddd;
-  color:#666;
+  color:rgb(91, 158, 235);
 }
 .tab-on{
   color:#333 !important;
 }
+
 
 
 
