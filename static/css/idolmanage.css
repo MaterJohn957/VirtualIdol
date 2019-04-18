@@ -1,0 +1,135 @@
+body{
+    overflow: hidden;
+}
+
+#tf-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    width:100%;
+}
+
+.nav-left{
+    opacity: 0.9;
+    width:12%;
+    height:100vh;
+    box-shadow: 1px 0 0px #ccc;
+    background-color:#fff; 
+    /* overflow-y: scroll; */
+}
+
+/* .content-right{
+    width:88%;
+    height:100vh;
+    overflow-y: scroll;
+}
+
+.nav-left::-webkit-scrollbar {
+    width: 10px;    
+    height: 8px;
+}
+.nav-left::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #1499ed;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+} */
+
+
+.content-right::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+}
+.content-right::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 10px;
+    background-color: #1499ed;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+.content-right::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #EDEDED;
+}
+
+/***************************** 左侧导航栏 偶像信息 ***************************/
+.idol-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin-top:20px;
+}
+
+.idol-profile{
+    position: relative;
+    top:0;
+    width:55%;
+    border-radius: 50%;
+    display: block;
+}
+.idol-profile img{
+    display: block;
+    width:100%;
+    border-radius: 50%;
+}
+
+.idol-img-black-overlay{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    border-radius: 50%;
+    opacity: 0.85;
+    
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+}
+
+/* 上传作品的按钮 */
+.upload-works{
+    margin-top:20px;
+    padding:5px 18px 5px 18px;
+    font-size: 18px;
+    background-color:#1499ed;
+    border-radius: 5px;
+    color:#fff;
+    text-decoration: none;
+}
+.upload-works:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+/* 左侧导航列表 */
+.nav-left-wrap{
+    margin-top:20px;
+    padding:5px 0px 5px 0px;
+}
+.nav-left-item{
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    padding:10px 0 10px 0;
+    color:#505050;
+}
+.left-item-on{
+    background-color:#1499ed;
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav-left-item:hover{
+    background-color:#1499ed;
+    color:#fff;
+    text-decoration: none;
+}
+
+
+/* 右侧内容 */
+.content-right-item{
+    display: none;
+}
