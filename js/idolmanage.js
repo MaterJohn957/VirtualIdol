@@ -58,44 +58,129 @@ $("#comments-management").click(function(){
 })
 
 
-//数据统计图表
-var ctx = document.getElementById('myChart');
-var ctx = document.getElementById('myChart').getContext('2d');
-var ctx = $('#myChart');
-var ctx = 'myChart';
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
+//////////////////////////////////////////////////////////数据统计图表//////////////////////////
+// 视频播放数据
+var browseChart = echarts.init(document.getElementById('browse-line'));
+
+var option = {
+    title: {
+        text: '视频播放数据'
     },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        name:'播放量',
+        data: [820, 932, 901, 934, 1290, 1330, 1200, 930, 1020],
+        type: 'line',
+        // 折线颜色
+        itemStyle: {
+            normal: {
+                color: '#33CCFF',
+                lineStyle: {
+                    color: '#33CCFF'
                 }
-            }]
-        }
-    }
-});
+            }
+        },
+        areaStyle: {}
+    }]
+};
+// 使用刚指定的配置项和数据显示图表。
+browseChart.setOption(option);
+
+//视频收藏数据
+var favoriteChart = echarts.init(document.getElementById('favoriteNumber-line'));
+
+var option = {
+    title: {
+        text: '视频收藏数据'
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        name:'播放量',
+        data: [820, 932, 901, 934, 1290, 1330, 1200, 930, 1020],
+        type: 'line',
+        // 折线颜色
+        itemStyle: {
+            normal: {
+                color: '#33CCFF',
+                lineStyle: {
+                    color: '#33CCFF'
+                }
+            }
+        },
+        areaStyle: {}
+    }]
+};
+favoriteChart.setOption(option);
+
+//观众留存率
+var viewChart = echarts.init(document.getElementById('viewLost-line'));
+
+var option = {
+    title: {
+        text: '观众留存率'
+    },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25', '2019/4/25']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        name:'播放量',
+        data: [820, 932, 901, 934, 1290, 1330, 1200, 930, 1020],
+        type: 'line',
+        // 折线颜色
+        itemStyle: {
+            normal: {
+                color: '#33CCFF',
+                lineStyle: {
+                    color: '#33CCFF'
+                }
+            }
+        },
+        areaStyle: {}
+    }]
+};
+viewChart.setOption(option);
+
+
+//内容管理部分变化
+// 点击视频管理
+$('[href="#manage-video"]').click(function(){
+    $("#tab-container a").removeClass('active');
+    $('[href="#manage-video"]').addClass("active");
+})
+
+// 点击音乐管理
+$('[href="#manage-music"]').click(function(){
+    $("#tab-container a").removeClass('active');
+    $('[href="#manage-music"]').addClass("active");
+})
+
+// 点击轻小说管理
+$('[href="#manage-novel"]').click(function(){
+    $("#tab-container a").removeClass('active');
+    $('[href="#manage-novel"]').addClass("active");
+})
+
+// 点击图库管理
+$('[href="#manage-pic"]').click(function(){
+    $("#tab-container a").removeClass('active');
+    $('[href="#manage-pic"]').addClass("active");
+})

@@ -23,6 +23,9 @@
     margin:0;
     font-weight: 600;
 }
+.page-title-pic {
+    width: 25%;
+}
 
 .page-divided-line{
     height:10px;
