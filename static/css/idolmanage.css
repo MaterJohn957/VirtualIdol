@@ -133,3 +133,12 @@ body{
 .content-right-item{
     display: none;
 }
+
+
+.chart-one {
+    position: relative;
+    display: inline-block;
+    width: 100% !important;
+    height: 50px;
+    background-color: aqua;
+}
