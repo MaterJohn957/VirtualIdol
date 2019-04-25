@@ -15,6 +15,11 @@ $(".idol-profile").click(function(){
     $(".nav-left-item").removeClass("left-item-on")
     $(".content-right-item").css("display","none")
     $("#info-right-content").css("display","block")
+    //点击非内容管理的内容时，内容管理部分所有的东西都不能出现
+    $('#manage-bottom-video').addClass("manage-hiden")
+    $('#manage-bottom-music').addClass("manage-hiden")
+    $('#manage-bottom-novel').addClass("manage-hiden")
+    $('#manage-bottom-pic').addClass("manage-hiden")
 })
 
 // 点击上传作品
@@ -22,6 +27,11 @@ $(".upload-works").click(function(){
     $(".nav-left-item").removeClass("left-item-on")
     $(".content-right-item").css("display","none")
     $("#upload-right-content").css("display","block")
+    //点击非内容管理的内容时，内容管理部分所有的东西都不能出现
+    $('#manage-bottom-video').addClass("manage-hiden")
+    $('#manage-bottom-music').addClass("manage-hiden")
+    $('#manage-bottom-novel').addClass("manage-hiden")
+    $('#manage-bottom-pic').addClass("manage-hiden")
 })
 
 // 点击数据中心
@@ -30,15 +40,21 @@ $("#data-center").click(function(){
     $(this).find("a").addClass("left-item-on")
     $(".content-right-item").css("display","none")
     $("#data-right-content").css("display","block")
-    
+    //点击非内容管理的内容时，内容管理部分所有的东西都不能出现
+    $('#manage-bottom-video').addClass("manage-hiden")
+    $('#manage-bottom-music').addClass("manage-hiden")
+    $('#manage-bottom-novel').addClass("manage-hiden")
+    $('#manage-bottom-pic').addClass("manage-hiden")
 })
 
-// 点击作品管理
+// 点击内容管理
 $("#works-management").click(function(){
     $(".nav-left-item").removeClass("left-item-on")
     $(this).find("a").addClass("left-item-on")
     $(".content-right-item").css("display","none")
     $("#works-right-content").css("display","block")
+    //点击内容管理时，显示内容管理中的视频管理的内容
+    $('#manage-bottom-video').removeClass("manage-hiden")
 })
 
 // 点击粉丝管理
@@ -47,6 +63,11 @@ $("#fans-management").click(function(){
     $(this).find("a").addClass("left-item-on")
     $(".content-right-item").css("display","none")
     $("#fans-right-content").css("display","block")
+    //点击非内容管理的内容时，内容管理部分所有的东西都不能出现
+    $('#manage-bottom-video').addClass("manage-hiden")
+    $('#manage-bottom-music').addClass("manage-hiden")
+    $('#manage-bottom-novel').addClass("manage-hiden")
+    $('#manage-bottom-pic').addClass("manage-hiden")
 })
 
 // 点击评论管理
@@ -55,6 +76,11 @@ $("#comments-management").click(function(){
     $(this).find("a").addClass("left-item-on")
     $(".content-right-item").css("display","none")
     $("#comments-right-content").css("display","block")
+    //点击非内容管理的内容时，内容管理部分所有的东西都不能出现
+    $('#manage-bottom-video').addClass("manage-hiden")
+    $('#manage-bottom-music').addClass("manage-hiden")
+    $('#manage-bottom-novel').addClass("manage-hiden")
+    $('#manage-bottom-pic').addClass("manage-hiden")
 })
 
 
@@ -95,98 +121,54 @@ browseChart.setOption(option);
 var playSourceChart = echarts.init(document.getElementById('playSource-circle'));
 option = {
     title: {
-        text: '偶像关注来源'
+        text: '偶像关注来源',
     },
-    tooltip: {
+
+    tooltip : {
         trigger: 'item',
-        formatter: "{a} <br/>{b}: {c} ({d}%)"
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
     },
     legend: {
-        orient: 'vertical',
-        x: 'left',
-        y: 'center',
+        orient : 'vertical',
+        x : 'left',
+        y : 'center',
         data:['Android','iPhone','PC','H5','小程序','站外']
     },
-    series: [
+    // toolbox: {
+    //     show : true,
+    //     feature : {
+    //         mark : {show: true},
+    //         dataView : {show: true, readOnly: false},
+    //         magicType : {
+    //             show: true, 
+    //             type: ['pie', 'funnel'],
+    //             option: {
+    //                 funnel: {
+    //                     x: '25%',
+    //                     width: '50%',
+    //                     funnelAlign: 'left',
+    //                     max: 1548
+    //                 }
+    //             }
+    //         },
+    //         restore : {show: true},
+    //         saveAsImage : {show: true}
+    //     }
+    // },
+    calculable : true,
+    series : [
         {
             name:'访问来源',
             type:'pie',
-            selectedMode: 'single',
-            radius: [0, '30%'],
-
-            label: {
-                normal: {
-                    position: 'inner'
-                }
-            },
-            labelLine: {
-                normal: {
-                    show: false
-                }
-            },
+            radius : '55%',
+            center: ['50%', '60%'],
             data:[
-                {value:335, name:'直达', selected:true},
-                {value:679, name:'营销广告'},
-                {value:1548, name:'搜索引擎'}
-            ]
-        },
-        {
-            name:'访问来源',
-            type:'pie',
-            radius: ['40%', '55%'],
-            label: {
-                normal: {
-                    formatter: '{a|{a}}{abg|}\n{hr|}\n  {b|{b}：}{c}  {per|{d}%}  ',
-                    backgroundColor: '#eee',
-                    borderColor: '#aaa',
-                    borderWidth: 1,
-                    borderRadius: 4,
-                    // shadowBlur:3,
-                    // shadowOffsetX: 2,
-                    // shadowOffsetY: 2,
-                    // shadowColor: '#999',
-                    // padding: [0, 7],
-                    rich: {
-                        a: {
-                            color: '#999',
-                            lineHeight: 22,
-                            align: 'center'
-                        },
-                        // abg: {
-                        //     backgroundColor: '#333',
-                        //     width: '100%',
-                        //     align: 'right',
-                        //     height: 22,
-                        //     borderRadius: [4, 4, 0, 0]
-                        // },
-                        hr: {
-                            borderColor: '#aaa',
-                            width: '100%',
-                            borderWidth: 0.5,
-                            height: 0
-                        },
-                        b: {
-                            fontSize: 16,
-                            lineHeight: 33
-                        },
-                        per: {
-                            color: '#eee',
-                            backgroundColor: '#334455',
-                            padding: [2, 4],
-                            borderRadius: 2
-                        }
-                    }
-                }
-            },
-            data:[
-                {value:335, name:'直达'},
-                {value:310, name:'邮件营销'},
-                {value:234, name:'联盟广告'},
-                {value:135, name:'视频广告'},
-                {value:1048, name:'百度'},
-                {value:251, name:'谷歌'},
-                {value:147, name:'必应'},
-                {value:102, name:'其他'}
+                {value:335, name:'Android'},
+                {value:310, name:'iPhone'},
+                {value:998, name:'PC'},
+                {value:135, name:'H5'},
+                {value:126, name:'小程序'},
+                {value:233, name:'站外'},
             ]
         }
     ]
