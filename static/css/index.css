@@ -1,446 +1,446 @@
 /**************************** 头部 ****************************/
 .header{
-  position: relative;
-  width:100%;
-  height:500px;
-  background: url(../img/bg-top.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+	position: relative;
+	width:100%;
+	height:500px;
+	background: url(../img/bg-top.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #navbar{
-  position: fixed;
-  top:-10;
-  z-index: 999;
-  width:100%;
+	position: fixed;
+	top:-10;
+	z-index: 999;
+	width:100%;
 }
 
 /* 新navbar样式 */
 .nav-bg{
-  width:100%;
-  position: absolute;
-  padding:0;
+	width:100%;
+	position: absolute;
+	padding:0;
 }
 
 .nav-link{
-  color:#ccc;
+ 	color:#ccc;
 }
 .nav-link:hover {
-  color: rgb(91, 158, 235);
+	color: rgb(91, 158, 235);
 }
 
 .nav-blur{
-  position: absolute;
-  width:100%;
-  height:65px;
-  filter:blur(1px);
-  box-shadow: 0px 1px 0px 0px #333;
-  background:#fff;background:rgba(255,255,255,.14);
-  z-index: 50;
+	position: absolute;
+	width:100%;
+	height:65px;
+	filter:blur(1px);
+	box-shadow: 0px 1px 0px 0px #333;
+	background:#fff;background:rgba(255,255,255,.14);
+	z-index: 50;
 }
 
 .logo{
-  width:60px;
-  height:50px;
+    width:60px;
+    height:50px;
 }
 
 .black-overlay{
-  z-index: 0;
-  position: absolute;
-  background-color:rgba(10, 10, 10, 0.65);
-  width:100%;
-  height:100%;
+    z-index: 0;
+    position: absolute;
+    background-color:rgba(10, 10, 10, 0.65);
+    width:100%;
+    height:100%;
 }
 
 .header-content{
-  position: absolute;
-  z-index:10;
-  width:100%;
-  top:130px;
+    position: absolute;
+    z-index:10;
+    width:100%;
+    top:130px;
 }
 
 .text{
-  margin: 0 auto;
-  text-align: center;
-  width:60%;
+    margin: 0 auto;
+    text-align: center;
+    width:60%;
 }
 
 .text p{
-  color:#ccc;
+    color:#ccc;
 }
 
 .header-nav-bottom{
 
-  position: absolute;
-  width:100%;
-  bottom: 35px;
+    position: absolute;
+    width:100%;
+    bottom: 35px;
 }
 .header-nav-list{
-  width: fit-content;
-  margin: 0 auto;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .header-nav-item{
-  float: left;
-  color: #ccc;
-  padding-left:20px;
-  padding-right:20px;
-  border-right: solid 1px #ccc;
+    float: left;
+    color: #ccc;
+    padding-left:20px;
+    padding-right:20px;
+    border-right: solid 1px #ccc;
 }
 .header-nav-item a{
-  color:#ccc;
-  font-size: 23px;
-  letter-spacing: 3px;
+    color:#ccc;
+    font-size: 23px;
+    letter-spacing: 3px;
 }
 .header-nav-item a:hover {
-  opacity: 0.6;
-  text-decoration: none;
-  color: rgb(91, 158, 235);
+    opacity: 0.6;
+    text-decoration: none;
+    color: rgb(91, 158, 235);
 }
 
 /************************ 轮播图图片 ************************/
 .content-img {
-  display: block;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    display: block;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /**************************** 广告 ****************************/
 .advertisement-frame {
-  position: relative;
-  background-color:#ccc;
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
+    position: relative;
+    background-color:#ccc;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .advertisement-pic {
-  padding:10px;
-  height:100px;
-  border-radius: 3px;
+    padding:10px;
+    height:100px;
+    border-radius: 3px;
 }
 .advertisement-pic-img {
-  display: block;
-  height: 80px;
-  margin: 0 auto;
+    display: block;
+    height: 80px;
+    margin: 0 auto;
 }
 
 /**************************** 推广 顶部标题 ****************************/
 .broadcast-panel{
-  /* margin-top:20px; */
-  padding:10px;
-  border-radius: 3px;
+    /* margin-top:20px; */
+    padding:10px;
+    border-radius: 3px;
 }
 
 .broadcast-header{
-  width:100%;
-  border-bottom:solid 1px #ccc;
-  
+    width:100%;
+    border-bottom:solid 1px #ccc;
+    
 }
 
 .broadcast-header p{
-  /* margin:5px; */
-  font-size: 20px;
-  font-weight: 600;
-  width: fit-content;
-  margin: 0;
-  padding-bottom: 10px;
-  border-bottom: solid 2px #666;
+    /* margin:5px; */
+    font-size: 20px;
+    font-weight: 600;
+    width: fit-content;
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #666;
 }
 .broadcast-header-img {
-  display: block;
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    display: block;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 /************************ 推广 共用样式 ************************/
 #tf-popularize {
-  padding-top:20px;
-  padding-bottom:20px;
-  background-color:#fff;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color:#fff;
 }
 .popularize-idol-body {
-  margin: 20px 0 15px 0;
+    margin: 20px 0 15px 0;
 }
 
 .popularize-idol-body-card-title {
-  display: flex;
-  font-size: 18px !important;
-  float: left;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  height: 30px;
-  width: 200px;
-  line-height: 30px;
-  font-weight: 600;
-  cursor: pointer;
+    display: flex;
+    font-size: 18px !important;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    font-weight: 600;
+    cursor: pointer;
 }
 .popularize-idol-body-card-title a {
-  color: #111;
+    color: #111;
 }
 .popularize-idol-body-card-title a:hover {
-  color: rgb(91, 158, 235);
-  text-decoration: none;
+    color: rgb(91, 158, 235);
+    text-decoration: none;
 }
 .popularize-idol-body-card-author {
-  display: flex;
-  float: left;
-  margin-left: 8px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 10px;
-  height: 30px;
-  width: 200px;
-  line-height: 30px;
-  cursor: pointer;
+    display: flex;
+    float: left;
+    margin-left: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    cursor: pointer;
 }
 .popularize-idol-body-card-author a:hover {
-  color: rgb(91, 158,  235);
-  text-decoration: none;
+    color: rgb(91, 158,    235);
+    text-decoration: none;
 }
 .popularize-idol-body-card {
-  margin-bottom: 15px;
-  display: flex;
-  border-bottom: solid #ccc 1px;
-  padding-bottom: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    border-bottom: solid #ccc 1px;
+    padding-bottom: 20px;
 }
 
 .popularize-idol-body-card img {
-  height: 60px;
-  width: 60px;
+    height: 60px;
+    width: 60px;
 }
 /* .popularize-idol-body-card img:hover {
-  box-shadow: 0 0 5px #111;
+    box-shadow: 0 0 5px #111;
 } */
 
 .limit {
-  height: 162px;
+    height: 162px;
 }
 .video-cover-change {
-  position: relative;
-  display: block;
+    position: relative;
+    display: block;
 }
 .cover-play-btn {
-  padding: 20px;
+    padding: 20px;
 }
 
 /************************ 推广轮播图 ************************/
 .slide-point-video {
-  position: absolute;
-  margin-left: 160px;
-  margin-right: 5px;
-  margin-top: 100px;
-  margin-bottom: 5px;
+    position: absolute;
+    margin-left: 160px;
+    margin-right: 5px;
+    margin-top: 100px;
+    margin-bottom: 5px;
 }
 .slide-video-shadow {
-  position: absolute;
-  margin-bottom: 0;
-  height: 162px;
-  width: 1000px;
-  padding-left: 5px;
-  padding-top: 120px;
-  background-color: #111111;
-  opacity: 0.2;
+    position: absolute;
+    margin-bottom: 0;
+    height: 162px;
+    width: 1000px;
+    padding-left: 5px;
+    padding-top: 120px;
+    background-color: #111111;
+    opacity: 0.2;
 }
 .slide-video-shadow-text {
-  position: absolute;
-  margin-bottom: 0;
-  height: 162px;
-  padding-left: 5px;
-  padding-top: 132px;
-  color: white;
-  opacity: 1;
+    position: absolute;
+    margin-bottom: 0;
+    height: 162px;
+    padding-left: 5px;
+    padding-top: 132px;
+    color: white;
+    opacity: 1;
 }
 
 .slide-point-production {
-  position: absolute;
-  margin-left: 440px;
-  margin-right: 5px;
-  margin-top: 100px;
-  margin-bottom: 5px;
+    position: absolute;
+    margin-left: 440px;
+    margin-right: 5px;
+    margin-top: 100px;
+    margin-bottom: 5px;
 }
 .slide-production-shadow {
-  position: absolute;
-  margin-bottom: 0;
-  height: 162px;
-  width: 1000px;
-  padding-left: 5px;
-  padding-top: 120px;
-  background-color: #111111;
-  opacity: 0.2;
+    position: absolute;
+    margin-bottom: 0;
+    height: 162px;
+    width: 1000px;
+    padding-left: 5px;
+    padding-top: 120px;
+    background-color: #111111;
+    opacity: 0.2;
 }
 .slide-production-shadow-text {
-  position: absolute;
-  margin-bottom: 0;
-  height: 162px;
-  padding-left: 10px;
-  padding-top: 132px;
-  color: white;
-  opacity: 1;
+    position: absolute;
+    margin-bottom: 0;
+    height: 162px;
+    padding-left: 10px;
+    padding-top: 132px;
+    color: white;
+    opacity: 1;
 }
 
 
 /************************ 推广 偶像视频 ************************/
 .popularize-idol-video-head {
-  margin: 15px 0 15px 0;
-  background-color: #111111;
-  border: none;
+    margin: 15px 0 15px 0;
+    background-color: #111111;
+    border: none;
 }
 .popularize-idol-video-head a{
-  display: block;
-  height:162px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 3px;
+    display: block;
+    height:162px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3px;
 }
 .popularize-idol-video-head:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 .popularize-idol-video-head:hover .slide-video-shadow {
-  display: none;
+    display: none;
 }
 .popularize-idol-video-head:hover .slide-video-shadow-text {
-  display: none;
+    display: none;
 }
 .popularize-idol-video-head:hover img {
-  box-shadow: 5px 5px 20px #888888;
-  opacity: 0.2;
+    box-shadow: 5px 5px 20px #888888;
+    opacity: 0.2;
 }
 .popularize-idol-video-head-text {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  color: white;
-  display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+    display: none;
 }
 .popularize-idol-video-head-text p {
-  position: flex;
-  margin-top: 8px;
-  margin-left: 10px;
-  color: #888888;
-  font-size: 15px;
+    position: flex;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #888888;
+    font-size: 15px;
 }
 .popularize-idol-video-head:hover .popularize-idol-video-head-text {
-  display: block;
-  opacity: 1;
-  cursor:pointer;
+    display: block;
+    opacity: 1;
+    cursor:pointer;
 }
 
 
 /************************ 推广 3D作品 ************************/
 .popularize-idol-production-head {
-  margin: 15px 0 0 0;
-  background-color: #111111;
-  border: none;
+    margin: 15px 0 0 0;
+    background-color: #111111;
+    border: none;
 }
 
 .popularize-idol-production-head a{
-  display: block;
-  height:162px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    display: block;
+    height:162px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .popularize-idol-production-head:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 .popularize-idol-production-head:hover .slide-production-shadow {
-  display: none;
+    display: none;
 }
 .popularize-idol-production-head:hover .slide-production-shadow-text {
-  display: none;
+    display: none;
 }
 .popularize-idol-production-head:hover img{
-  box-shadow: 5px 5px 20px #888888;
-  opacity: 0.2;
+    box-shadow: 5px 5px 20px #888888;
+    opacity: 0.2;
 }
 .popularize-idol-production-head-text {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  color: white;
-  display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+    display: none;
 }
 .popularize-idol-production-head-text p {
-  position: flex;
-  margin-top: 8px;
-  margin-left: 10px;
-  color: #888888;
-  font-size: 15px;
+    position: flex;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #888888;
+    font-size: 15px;
 }
 
 
 .broadcast-header-left {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
 .broadcast-header-right {
-  float: right;
-  width: 50%;
+    float: right;
+    width: 50%;
 }
 .popularize-idol-production-head:hover .popularize-idol-production-head-text {
-  display: block;
-  opacity: 1;
-  cursor:pointer;
+    display: block;
+    opacity: 1;
+    cursor:pointer;
 }
 
 /************************ 推广 音乐 ************************/
 .songList-list {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 .songList-list-item {
-  display: flex;
-  justify-content: space-between;
-  height: 20px;
-  align-items: center;
-  border-bottom: solid #ccc 1px;
-  padding: 25px 0 25px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    align-items: center;
+    border-bottom: solid #ccc 1px;
+    padding: 25px 0 25px 0;
 }
 
 .songList-list-item-num {
-  background-color: rgb(252, 119, 10);
-  width: 20px;
-  height: 20px;
-  color: white;
-  text-align:center;
-  line-height: 20px;
+    background-color: rgb(252, 119, 10);
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align:center;
+    line-height: 20px;
 }
 .songList-list-item-num:hover {
-  cursor: default;
+    cursor: default;
 }
 .songList-list-item-coverPic {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  margin-left: -25px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-left: -25px;
 }
 .songList-list-item-coverPic-img{
-  width:100%;
-  height:inherit;
+    width:100%;
+    height:inherit;
 }
 .songList-list-item-songName {
-  margin-left: -35px;
+    margin-left: -35px;
 }
 .songList-list-item-songName:hover {
-  text-decoration: none;
-  color: rgb(91, 158,  235);
+    text-decoration: none;
+    color: rgb(91, 158,    235);
 }
 .songList-list-item-songTime:hover {
-  text-decoration: none;
-  color: rgb(91, 158,  235);
+	text-decoration: none;
+	color: rgb(91, 158,    235);
 }
 
 
@@ -450,158 +450,156 @@
 
 /****************************** 视频 ******************************/
 #tf-video{
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .idol-video-head {
-  margin: 30px 15px 15px 15px;
-  transition: all 0.6s;
-  border: none;
-  background-color: #000;
+	margin: 30px 15px 15px 15px;
+	transition: all 0.6s;
+	border: none;
+	background-color: #000;
 }
 .idol-video-head img{
-  display: block;
-  width: 248px;
-  height:162px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	display: block;
+	width: 248px;
+	height:162px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .idol-video-head:hover {
-  box-shadow: 5px 5px 20px #888888;
-  cursor: pointer;
+	box-shadow: 5px 5px 20px #888888;
+	cursor: pointer;
 }
 
 .idol-video-head:hover a {
-  opacity: 0.6;
+	opacity: 0.6;
 }
 .video-card-title {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  font-size: 20px;
-  height: 40px;
-  line-height: 20px;
-  padding: 10px 5px;
-  overflow: hidden;
-  background: #000;
-  background: linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9));
-  border-radius: 3px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	height: 40px;
+	line-height: 20px;
+	padding: 10px 5px;
+	overflow: hidden;
+	background: #000;
+	background: linear-gradient(transparent,rgba(0,0,0,.1) 20%,rgba(0,0,0,.2) 35%,rgba(0,0,0,.6) 65%,rgba(0,0,0,.9));
+	border-radius: 3px;
 }
 
 
 .video-card-title .title {
-  color: #fff;
-  height: 40px;
-  overflow: hidden;
-  margin-bottom: 5px;
-  word-break: break-all;
-  word-wrap: break-word;
-  font-size: 15px;
-  margin-left: 10px;
+	color: #fff;
+	height: 40px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	word-break: break-all;
+	word-wrap: break-word;
+	font-size: 15px;
+	margin-left: 10px;
 }
 
 
 .video-bg {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  color: white;
-  display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 20px;
+	color: white;
+	display: none;
 }
 .video-bg p {
-  position: flex;
-  margin-top: 8px;
-  margin-left: 10px;
-  color: #888888;
-  font-size: 15px;
+	position: flex;
+	margin-top: 8px;
+	margin-left: 10px;
+	color: #888888;
+	font-size: 15px;
 }
 .video-card:hover .video-bg {
-  display: block;
-  opacity: 1;
-  cursor:pointer;
+	display: block;
+	opacity: 1;
+	cursor:pointer;
 }
 .video-card:hover .video-card-title {
-  display: none;
+	display: none;
 }
 .video-card:hover img {
-  opacity: 0.2;
+	opacity: 0.2;
 }
 .title {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 
 /****************************板块导航****************************/
 
 .part-title{
-  font-size:33px;
-  font-weight: 600;
-  letter-spacing: 15px;
-  text-align: center;
-  padding-top:20px;
+	font-size:33px;
+	font-weight: 600;
+	letter-spacing: 15px;
+	text-align: center;
+	padding-top:20px;
 }
 .part-title img {
-  height: 130px;
+	height: 130px;
 }
 
 .part-nav{
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  padding: 15px 0 15px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding: 15px 0 15px 0;
 }
 
 
 .part-tab{
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-content:center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content:center;
 }
 
 .part-tab-item{
-  
-
-  cursor: pointer;
-  color:#999;
+	cursor: pointer;
+	color:#999;
 }
 
 
 #part-refresh{
-  border-radius: 3px;
-  border:solid 1px #ccc;
-  padding: 5px 15px 5px 15px;
-  cursor: pointer;
-  background-color:#eee;
-  color:#999;
+	border-radius: 3px;
+	border:solid 1px #ccc;
+	padding: 5px 15px 5px 15px;
+	cursor: pointer;
+	background-color:#eee;
+	color:#999;
 }
 #part-refresh:hover{
-  background-color:#ddd;
-  color:rgb(91, 158, 235);
+	background-color:#ddd;
+	color:rgb(91, 158, 235);
 }
 
 #part-more{
-  border-radius: 3px;
-  border:solid 1px #ccc;
-  padding: 5px 15px 5px 15px;
-  cursor: pointer;
-  background-color:#eee;
-  color:#999;
+	border-radius: 3px;
+	border:solid 1px #ccc;
+	padding: 5px 15px 5px 15px;
+	cursor: pointer;
+	background-color:#eee;
+	color:#999;
 }
 #part-more:hover{
-  background-color:#ddd;
-  color:rgb(91, 158, 235);
+	background-color:#ddd;
+	color:rgb(91, 158, 235);
 }
 .tab-on{
-  color:#333 !important;
+	color:#333 !important;
 }
 
 
@@ -609,368 +607,368 @@
 
 /****************************音乐榜*****************************/
 #tf-music{
-  position: relative;
-  width:100%;
-  padding-top:20px;
-  padding-bottom: 20px;
+	position: relative;
+	width:100%;
+	padding-top:20px;
+	padding-bottom: 20px;
 }
 
 
 /*************************************音乐列表*******************************/
 .music-list{
-  width:100%;
-  height:450px;
-  padding: 30px 0 30px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  justify-content:space-between;
+	width:100%;
+	height:450px;
+	padding: 30px 0 30px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content:space-between;
 }
 .music-item{
-  height: fit-content;
-  width:30%;
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 10px;
-  border-bottom: solid 1px #ccc;
-  justify-content:space-between;
+    height: fit-content;
+    width:30%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ccc;
+    justify-content:space-between;
 }
 
 .music-cover{
-  width:80px;
-  height:80px;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  border-radius: 50%;
+    width:80px;
+    height:80px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
 }
 
 
 .music-cover-img{
-  width:100%;
-  height:inherit;
+    width:100%;
+    height:inherit;
 }
 .cover-overlay-black{
-  position: absolute;
-  top:0;
-  right:0;
-  width:100%;
-  height: inherit;
-  background-color:#333;
-  opacity: 0.5;
-  display: none;
+    position: absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height: inherit;
+    background-color:#333;
+    opacity: 0.5;
+    display: none;
 }
 
 .cover-play-icon{
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:inherit;
-  padding:30px;
-  opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:inherit;
+    padding:30px;
+    opacity: 0;
 }
 
 .music-overview{
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
 }
 .music-overview a{
-  display: block;
-  text-decoration: none;
+    display: block;
+    text-decoration: none;
 }
 .music-overview a:hover{
-  color: rgb(91, 158,  235);
+    color: rgb(91, 158,    235);
 }
 .music-overview a:nth-child(1){
-  font-size: 17px;
+    font-size: 17px;
 }
 
 .music-duration{
-  display: flex; 
-  flex-direction: column;
-  justify-content:center;
-  color: #ccc;
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    color: #ccc;
 }
 
 /* *************************** 播放控制按钮 *************************** */
 .carousel-control-custom{
-  width:100%;
-  text-align: center;
-  font-size: 120px;
-  line-height: 0;
-  background-color:#dedede;
-  opacity: 0.7;
+    width:100%;
+    text-align: center;
+    font-size: 120px;
+    line-height: 0;
+    background-color:#dedede;
+    opacity: 0.7;
 }
 
 .carousel-control-custom:hover{
-  opacity: 1;
+    opacity: 1;
 }
 
 .carousel-control-custom img{
-  width:100px;
-  height:100px;
-  padding:20px;
-  
+    width:100px;
+    height:100px;
+    padding:20px;
+    
 }
 
 .left-btn{
-  position: absolute;
-  width:100px;
-  height:624px;
-  left:-100px;
-  top:0;
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  
+    position: absolute;
+    width:100px;
+    height:624px;
+    left:-100px;
+    top:0;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    
 }
 
 .right-btn{
-  position: absolute;
-  width:100px;
-  height:624px;
-  right:-100px;
-  top:0;
-  display: flex;
-  flex-direction:column;
-  justify-content:center;
-  
+    position: absolute;
+    width:100px;
+    height:624px;
+    right:-100px;
+    top:0;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    
 }
 
 /************************** 同人画廊 ****************************/
 #tf-gallery{
-  position: relative;
-  background-color:#efefef;
-  width:100%;
-  padding-top:20px;
-  padding-bottom: 40px;
+    position: relative;
+    background-color:#efefef;
+    width:100%;
+    padding-top:20px;
+    padding-bottom: 40px;
 }
 
 .card-head-custom{
-  position: relative;cursor: pointer;
+    position: relative;cursor: pointer;
 }
 
 .card-img-overlay-black{
-  position: absolute;
-  top:0;
-  left:0;
-  background-color:#121212;
-  opacity: 0.7;
-  width:100%;
-  height:100%;
-  display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color:#121212;
+    opacity: 0.7;
+    width:100%;
+    height:100%;
+    display: none;
 }
 .card-img-overlay-eye{
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  /* display: flex; */
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display:none;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display:none;
 }
 .eye-f-background{
-  width:75px;
-  height:75px;
-  padding:20px;
-  opacity: 0.85;
-  background-color:#fff;
-  border-radius: 50%;
+    width:75px;
+    height:75px;
+    padding:20px;
+    opacity: 0.85;
+    background-color:#fff;
+    border-radius: 50%;
 }
 .eye-f-background img{
-  width:100%;
-  height:100%;
+    width:100%;
+    height:100%;
 }
 
 .card-gallery-custom{
-  border-radius: 0;
+    border-radius: 0;
 }
 
 
 .image-details{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .image-details-left{
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
 }
 .user-profile{
-  width:30px;
-  height:30px;
-  border-radius: 50%;
-  box-shadow: 0 0 2px #232323;
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #232323;
 }
 .image-from{
-  margin-left:20px;
+    margin-left:20px;
 }
 .image-from a{
-  display: block;
-  text-decoration: none;
+    display: block;
+    text-decoration: none;
 }
 .image-from a:nth-child(1){
-  font-size: 13px;
+    font-size: 13px;
 }
 .image-from a:nth-child(2){
-  font-size: 10px;
+    font-size: 10px;
 }
 
 .image-details-right{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .image-details-right a{
-  display: block;
-  font-size: 18px;
-  width:25px;
-  height:25px;
-  line-height: 25px;
-  text-align: center;
-  border-radius: 3px;
-  margin-left:13px;
-  border:solid 1px #ccc;
-  /* box-shadow: 0 0 2px #888; */
+    display: block;
+    font-size: 18px;
+    width:25px;
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    margin-left:13px;
+    border:solid 1px #ccc;
+    /* box-shadow: 0 0 2px #888; */
 }
 
 .gallery-more-btn{
-  width:150px;
-  height:60px;
-  line-height: 60px;
-  text-align: center;
-  border:solid 1px #ccc;
-  font-size: 20px;
-  display: block;
-  margin:40px auto;
-  margin-bottom: 0;
-  cursor: pointer;
+    width:150px;
+    height:60px;
+    line-height: 60px;
+    text-align: center;
+    border:solid 1px #ccc;
+    font-size: 20px;
+    display: block;
+    margin:40px auto;
+    margin-bottom: 0;
+    cursor: pointer;
 }
 
 /*********************查看图片的模态对话框*************************/
 .modal-content-custom{
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 .modal-content-custom .close{
-  align-self: flex-end;
+    align-self: flex-end;
 }
 .modal-content-custom .fa-close{
-  color:#fff;
-  font-size: 45px;
+    color:#fff;
+    font-size: 45px;
 }
 
 /****************************轻小说榜*****************************/
 #tf-novel{
-  padding-top:20px;
-  padding-bottom:40px;
-  background-color:#fff;
+    padding-top:20px;
+    padding-bottom:40px;
+    background-color:#fff;
 }
 .novel-list-part{
-  border-radius: 5px;
-  background-color:#efefef;
-  padding:10px;
+    border-radius: 5px;
+    background-color:#efefef;
+    padding:10px;
 }
 .novel-part-title{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items:center;
-  border-bottom:solid 1px #ccc;
-  padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom:solid 1px #ccc;
+    padding-bottom: 10px;
 }
 .novel-part-title p{
-  color:#636363;
-  font-weight: 600;
-  margin: 0;
+    color:#636363;
+    font-weight: 600;
+    margin: 0;
 }
 .novel-part-title a{
-  text-decoration: none;
+    text-decoration: none;
 }
 
 
 /* 列表中的每部小说的详细信息 */
 .novel-item{
-  /* 在鼠标移动上去之前是 34px */
-  height: 34px; 
-  padding-top:5px;
-  overflow: hidden;
-  /* padding-bottom: 5px; */
-  border-top: dotted 1px #ccc;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    /* 在鼠标移动上去之前是 34px */
+    height: 34px; 
+    padding-top:5px;
+    overflow: hidden;
+    /* padding-bottom: 5px; */
+    border-top: dotted 1px #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
 .novel-item-num{
-  /* background-color:#fff; */
-  
-  display: inline-block;
-  font-size: 15px;
-  line-height: 18px;
-  text-align: center;
-  width:18px;
-  height:18px;
-  color:#bbb;
+    /* background-color:#fff; */
+    
+    display: inline-block;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    width:18px;
+    height:18px;
+    color:#bbb;
 
 }
 
 .novel-title a{
-  color:#333;
-  text-decoration: none;
-  display: inline;
-  margin-left:5px;
+    color:#333;
+    text-decoration: none;
+    display: inline;
+    margin-left:5px;
 }
 .novel-title a:hover{
-  color:rgb(91, 158,  235);
+    color:rgb(91, 158,    235);
 }
 
 .novel-title div{
-  margin-left:25px;
-  font-size:13px;
-  margin-top:3px;
+    margin-left:25px;
+    font-size:13px;
+    margin-top:3px;
 }
 .novel-hot{
-  margin-top:8px !important;
-  color:#9c9c9c;
+    margin-top:8px !important;
+    color:#9c9c9c;
 }
 .novel-author a{
-  font-size:13px;
-  color:#9c9c9c;
+    font-size:13px;
+    color:#9c9c9c;
 }
 .novel-author a:hover{
-  color:rgb(91, 158, 235);
+    color:rgb(91, 158, 235);
 }
 .novel-status{
-  color:#686868;
+    color:#686868;
 }
 
 .author{
-  color:#bababa;
+    color:#bababa;
 }
 .novel-cover{
-  width:82px;
-  height:95px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px #bbb;
+    width:82px;
+    height:95px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #bbb;
 }
 .novel-on{
-  /* border:none; */
-  padding-top:15px;
-  padding-bottom:15px;
-  /* 当鼠标移动到上面时，宽度变为 125px */
-  height:125px; 
+    /* border:none; */
+    padding-top:15px;
+    padding-bottom:15px;
+    /* 当鼠标移动到上面时，宽度变为 125px */
+    height:125px; 
 }
 
 
@@ -978,30 +976,30 @@
 /***********************左侧导航栏***********************/
 
 #nav-left{
-  background-color:#fff;
-  position: fixed;
-  right: 0;
-  bottom: 10vh;
-  z-index:99;
-  box-shadow: 0 0 15px #bcbcbc;
-  display: none;
+    background-color:#fff;
+    position: fixed;
+    right: 0;
+    bottom: 10vh;
+    z-index:99;
+    box-shadow: 0 0 15px #bcbcbc;
+    display: none;
 }
 #nav-left-backtop{
-  width:45px;
-  height:45px;
+    width:45px;
+    height:45px;
 }
 #nav-left-backtop a{
-  display: block;
-  width:100%;
-  height:100%;
-  text-align: center;
-  line-height: 0px;
-  text-decoration: none;
-  padding:5px;
+    display: block;
+    width:100%;
+    height:100%;
+    text-align: center;
+    line-height: 0px;
+    text-decoration: none;
+    padding:5px;
 }
 #nav-left-backtop a i{
-  font-size: 30px;
+    font-size: 30px;
 }
 #nav-left-backtop a span{
-  font-size: 8px;
+    font-size: 8px;
 }
