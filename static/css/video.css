@@ -1,0 +1,211 @@
+hr{
+    margin-top:3px;
+    margin-bottom: 3px; 
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    background: #fff;
+}
+
+.container-fluid{
+    width: 75% !important;
+}
+
+.card{
+    margin: 10px;
+}
+
+.video-left{
+    padding: 18px;
+}
+
+.video-head{
+    margin-left: 2px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+.video-info{
+    margin-top: 15px;
+    height: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #999;
+}
+
+.video-time{
+    margin-left: 20px;
+}
+
+.video-content{
+    height: 60vh;
+    background: #000;
+}
+
+.video-operate{
+    margin-top: 10px;
+    height: 4vh;
+    padding: 8px;
+    display: flex;
+    color: #777;
+    align-items: center;
+}
+
+.video-operate-item{
+    margin-right: 40px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#video-recommend-title:hover,.video-operate-item:hover{
+    color: #f9932b;
+}
+
+.video-operate .fa{
+    font-size: 1.5em;
+}
+
+.video-thumbs-up{
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+
+.video-comment{
+    margin-top: 4vh;
+}
+
+/* write comment style */
+.write-comment{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.user-profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.input-txt{
+    outline: none;
+    resize: none;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+    border: 1px solid #e5e9ef;
+    overflow: auto;
+    border-radius: 4px;
+    color: #555;
+    width: 100%;
+    height: 65px;
+    padding: 5px 10px;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+.comment-submit{
+    width: 70px;
+    height: 64px;
+    top: 0;
+    padding: 4px 15px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    min-width: 60px;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #f9932b;
+    border: 1px solid #f9932b;
+    user-select: none;
+    outline: none !important;
+}
+
+.comment-submit:hover{
+    background-color: #ffa851;
+    border: 1px solid #ffa851;
+}
+
+.comment-list{
+    padding: 5px;
+    margin-top: 2vh;
+}
+
+/* 单一评论样式 */
+.comment-item{
+    margin: 2vh 1vw 2vh 1vw;
+    display: flex;
+}
+
+.user-name{
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.comment-info{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    color: #99a2aa;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.comment-info-item{
+    margin-right: 30px;
+}
+
+#thumb-up:hover,#reply:hover{
+    color: #f9932b;
+    cursor: pointer;
+}
+/* 单一评论样式 结束*/
+/*  write comment style */
+
+.video-right{
+    padding: 10px;
+}
+
+.video-recommend-list{
+    margin-top: 20px;
+}
+
+.video-profile{
+    width: 160px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.video-recommend-item{
+    display: flex;
+    height: 100px;
+    margin: 1vh 0 1vh 0;
+}
+
+.video-recommend-title:hover,.video-profile:hover{
+    cursor: pointer;
+}
+
+.video-recommend-info{
+    margin-left: 10px;
+    height: 100%;
+    position: relative;
+}
+
+.video-recommend-play-num{
+    color: #99a2aa;
+    font-size: 14px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+}

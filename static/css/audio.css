@@ -1,0 +1,129 @@
+hr{
+    margin-top:3px;
+    margin-bottom: 3px; 
+}
+
+body{
+    background: #fff;
+}
+
+.audio-bg{
+    box-shadow: 2px 2px 16px #99a2aa;
+    position: absolute;
+    top: 131px;
+    width: 100%;
+    height: 60vh;
+    background: rgba(244, 244, 244, 0.8);
+}
+
+.container-fluid{
+    width: 75% !important;
+}
+
+.audio-wrap{
+    padding: 10px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    /* background: #888; */
+}
+
+.audio-profile{
+    width: 350px;
+    height: 350px;
+    border: 4px;
+}
+
+.audio-info-wrap{
+    height: 350px;
+    margin-left: 50px;
+}
+
+.audio-info{
+    height: 270px;
+}
+
+.audio-info-item{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    color: #697179;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.audio-operate{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    height: 3px;
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+    background: #f9932b;
+    cursor: pointer;
+}
+
+#current-time{
+    color: #f9932b;
+}
+
+.time{
+    position: absolute;
+    display: inline-block;
+    right: 4px;
+    top:-30px;
+    font-size: 14px;
+    color: #4e515594;
+    cursor: text;
+}
+
+.bar{
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid #ffa851;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.play-song{
+    height: 47px;
+    width: 140px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+    background: #f9932b;
+}
+
+.play-song:hover{
+    cursor: pointer;
+    background: #ffa851;
+}
+
+.operate-song{
+    height: 47px;
+    width: 140px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-left: 20px;
+}
+
+.operate-song:hover{
+    cursor: pointer;
+    background: #e7e7e7;
+}
+
+.txt-center{
+    margin-left: 33px;
+    margin-top: 8px;
+}
