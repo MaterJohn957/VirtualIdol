@@ -171,7 +171,7 @@ body{
     width: 100%;
     z-index: 1;
     white-space: nowrap;
-    padding-left: 240px;
+    padding-left: 209px;
 }
 .link-top-container a:hover {
     text-decoration: none;
@@ -269,16 +269,20 @@ body{
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
-    color: #505050;
+    color: #b6b6b6;
 }
 .manage-bottom-video-left-text-data {
+    display: flex;
     font-size: 13px;
     margin-left: 4px;
     word-break:keep-all;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
-    color: #505050;
+    color: #b6b6b6;
+}
+.manage-bottom-video-left-text-data-play {
+    margin-right: 20px;
 }
 
 
@@ -331,6 +335,313 @@ body{
     border:1px solid #ccc;
 }
 .manage-bottom-video-center-btn a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+/* 内容管理-音频样式 */
+.manage-bottom-music {
+    display: flex;
+    width: 900px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+.manage-bottom-music-left {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-start;
+}
+.manage-bottom-music-left-pic {
+    display: flex;
+    height: 108px;
+    width: 108px;
+    overflow: hidden;
+    border-radius: 5px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    box-shadow: 10px 10px 10px #00a1d6;
+}
+.manage-bottom-music-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 72%;
+    /* background-color: #00a1d6; */
+    padding-left: 30px;
+}
+.manage-bottom-music-left-text-title {
+    overflow: hidden;
+    
+}
+.manage-bottom-music-left-text-title a{
+    font-weight: 400;
+    font-size: 18px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: #222;
+}
+.manage-bottom-music-left-text-title a:hover {
+    text-decoration: none;
+    color: #00a1d6;
+}
+.manage-bottom-music-left-text-label {
+    display: flex;
+    font-size: 15px;
+    margin-left: 4px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: rgb(126, 126, 126);
+}
+.label {
+    display: flex;
+    border-radius: 30px;
+    border:1px solid #ccc;
+    margin-right: 5px;
+    padding: 5px 15px 5px 15px;
+    font-size: 10px;
+}
+.manage-bottom-music-left-text-time {
+    font-size: 15px;
+    margin-left: 4px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: rgb(126, 126, 126);
+    font-size: 10px;
+}
+.manage-bottom-music-left-text-data {
+    display: flex;
+    font-size: 13px;
+    margin-left: 4px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: rgb(126, 126, 126);
+    font-size: 10px;
+}
+.manage-bottom-music-left-text-data-play {
+    margin-right: 20px;
+}
+
+
+.manage-bottom-music-right {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.manage-bottom-music-right-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #00a1d6; */
+}
+.manage-bottom-music-right-btn a {
+    background-color: #fff;
+    font-size: 14px;
+    color:#222;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.manage-bottom-music-right-btn a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+.manage-bottom-music-center {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.manage-bottom-music-center-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #00a1d6; */
+}
+.manage-bottom-music-center-btn a {
+    background-color: #00a1d6;
+    font-size: 14px;
+    color:white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.manage-bottom-music-center-btn a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+
+
+
+/* 内容管理-轻小说 */
+.manage-bottom-novel {
+    display: flex;
+    width: 900px;
+    height: 180px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    /* border-bottom: 1px solid #ccc; */
+    padding: 20px;
+    background-color: #eeeeee;
+}
+.manage-bottom-novel-left {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    justify-content: flex-start;
+}
+.manage-bottom-novel-left-pic {
+    display: flex;
+    height: 140px;
+    width: 108px;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* box-shadow: 2px 2px 2px #fff; */
+}
+.manage-bottom-novel-left-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 72%;
+    /* background-color: #00a1d6; */
+    padding-left: 30px;
+}
+.manage-bottom-novel-left-text-title {
+    overflow: hidden;
+    
+}
+.manage-bottom-novel-left-text-title a{
+    font-weight: 400;
+    font-size: 18px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: #222;
+}
+.manage-bottom-novel-left-text-title a:hover {
+    text-decoration: none;
+    color: #00a1d6;
+}
+.manage-bottom-novel-left-text-label {
+    display: flex;
+    font-size: 15px;
+    margin-left: 4px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: rgb(126, 126, 126);
+}
+.label {
+    display: flex;
+    border-radius: 30px;
+    border:1px solid #ccc;
+    margin-right: 5px;
+    padding: 5px 15px 5px 15px;
+    font-size: 10px;
+}
+.manage-bottom-novel-left-text-time {
+    font-size: 15px;
+    margin-left: 4px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: rgb(126, 126, 126);
+    font-size: 10px;
+}
+.manage-bottom-novel-left-text-data {
+    display: flex;
+    font-size: 13px;
+    margin-left: 4px;
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    color: rgb(126, 126, 126);
+    font-size: 10px;
+}
+.manage-bottom-novel-left-text-data-click {
+    margin-right: 13px;
+}
+
+
+.manage-bottom-novel-right {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.manage-bottom-novel-right-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #00a1d6; */
+}
+.manage-bottom-novel-right-btn a {
+    background-color: #fff;
+    font-size: 14px;
+    color:#222;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.manage-bottom-novel-right-btn a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+
+.manage-bottom-novel-center {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+.manage-bottom-novel-center-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #00a1d6; */
+}
+.manage-bottom-novel-center-btn a {
+    background-color: #00a1d6;
+    font-size: 14px;
+    color:white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+.manage-bottom-novel-center-btn a:hover{
     text-decoration: none;
     opacity: 0.8;
 }
