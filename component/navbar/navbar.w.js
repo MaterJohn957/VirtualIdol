@@ -42,14 +42,14 @@ Vue.component('navbar-component',
                             <a class='dropdown-item' href='history.html'>我的历史</a> \
                             <div class='dropdown-divider'></div> \
                             <a class='dropdown-item' href='setting.html'>设置</a> \
-                            <a class='dropdown-item' href='index.html'>注销</a> \
+                            <a class='dropdown-item' href='login.html'>注销</a> \
                         </div> \
                     </li> \
                     <li class='nav-item'> \
                         <a class='nav-link' href='message.html' data-toggle='tooltip' data-placement='bottom' title='消息中心'><i class='fa fa-bell'></i></a> \
                     </li> \
                     <li class='nav-item'> \
-                        <a class='nav-link' href='broker.html' data-toggle='tooltip' data-placement='bottom' title='前往经纪人办公室'><i class='fa fa-user'></i></a> \
+                        <a class='nav-link' href='idolmanage.html' data-toggle='tooltip' data-placement='bottom' title='前往经纪人办公室'><i class='fa fa-user'></i></a> \
                     </li> \
                 </ul> \
             </div> \

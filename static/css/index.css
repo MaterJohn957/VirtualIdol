@@ -854,6 +854,9 @@
     margin-bottom: 0;
     cursor: pointer;
 }
+.gallery-more-btn :hover {
+    color: #1499ed !important;
+}
 
 /*********************查看图片的模态对话框*************************/
 .modal-content-custom{
