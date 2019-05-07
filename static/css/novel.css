@@ -4,7 +4,7 @@ hr{
 }
 
 body{
-    background-image: url("../img/pic-3.jpg");
+    background-image: url("../img/novel-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -51,6 +51,7 @@ body{
 }
 
 .novel-content{
+    margin-right: 15px;
     padding: 70px 20px 20px 20px;
     text-align: center;
     background: #f6f1e7;
