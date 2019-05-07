@@ -44,6 +44,9 @@ body{
 .novel-tool-item:hover{
     color: #fa9229;
 }
+.novel-tool-item-clicked {
+    color: #fa9229;
+}
 
 .novel-tool-item .fa{
     font-size: 18px;

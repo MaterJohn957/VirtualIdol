@@ -10,9 +10,9 @@ body{
 .audio-bg{
     box-shadow: 2px 2px 16px #99a2aa;
     position: absolute;
-    top: 131px;
+    top: 95px;
     width: 100%;
-    height: 60vh;
+    height: 295px;
     background: rgba(244, 244, 244, 0.8);
 }
 
@@ -22,28 +22,33 @@ body{
 
 .audio-wrap{
     width: 100%;
-    padding: 100px;
-    height: 60vh;
+    padding: 5px;
+    height: 35vh;
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     /* background: #888; */
 }
 
 .audio-profile{
     display: flex;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border: 4px;
+    border-radius: 50%;
+    border-style:groove;
+    border-width:10px;
+    border-color: #726f6f;
 }
 
 .audio-info-wrap{
-    height: 350px;
+    height: 250px;
+    margin-left: 50px;
 }
 
 .audio-info{
-    height: 270px;
+    height: 168px;
 }
 
 .audio-info-item{
@@ -87,7 +92,7 @@ body{
 .bar{
     position: absolute;
     left: 0px;
-    top: -8px;
+    top: -6px;
     height: 16px;
     width: 16px;
     border: 2px solid #ffa851;
@@ -95,6 +100,7 @@ body{
     background: #fff;
     cursor: pointer;
 }
+
 
 .play-song{
     height: 47px;
@@ -119,6 +125,7 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     margin-left: 20px;
+    
 }
 
 .operate-song:hover{
@@ -129,4 +136,20 @@ body{
 .txt-center{
     margin-left: 33px;
     margin-top: 8px;
+}
+
+.txt-center-clicked{
+    margin-left: 24px;
+    margin-top: 8px;
+    color: #ffa851;
+}
+
+
+/* 歌词样式 */
+.lyrics-title {
+    font-size: 20px;
+}
+.lyrics-main {
+    margin-top: 10px;
+    margin-bottom: 40px;
 }

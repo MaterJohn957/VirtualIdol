@@ -12,8 +12,8 @@ new Vue(
         el:"#subscription",
         data:{
             attends:[
-                {attend:'123'},
-                {attend:'123'},
+                {attend:''},
+                {attend:''},
             ]
         }
     }
@@ -25,8 +25,8 @@ new Vue(
         data:{
             allVideos:[
                 {video:''},
-                {video:''},
-                {video:''},
+                // {video:''},
+                // {video:''},
             ]
         }
     }
