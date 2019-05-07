@@ -163,12 +163,36 @@ option = {
             radius : '55%',
             center: ['50%', '60%'],
             data:[
-                {value:335, name:'Android'},
-                {value:310, name:'iPhone'},
-                {value:998, name:'PC'},
-                {value:135, name:'H5'},
-                {value:126, name:'小程序'},
-                {value:233, name:'站外'},
+                {
+                    value:998,
+                    name:'Android',
+                    itemStyle: {color: 'rgb(126,185,238)'},
+                },
+                {
+                    value:310,
+                    name:'iPhone',
+                    itemStyle: {color: 'rgb(144,237,238)'},
+                },
+                {
+                    value:335,
+                    name:'PC',
+                    itemStyle: {color: 'rgb(250,223,61)'},
+                },
+                {
+                    value:135,
+                    name:'H5',
+                    itemStyle: {color: 'rgb(245,152,55)'},
+                },
+                {
+                    value:126,
+                    name:'小程序',
+                    itemStyle: {color: 'rgb(137,216,125)'},
+                },
+                {
+                    value:233,
+                    name:'站外',
+                    itemStyle: {color: 'rgb(242,89,64)'},
+                },
             ]
         }
     ]
